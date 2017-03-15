@@ -3,13 +3,13 @@
 		<h2>Рассчитайте стоимость дома за 3 шага</h2>
 		<div class="tabbed">
 			<label>Параметры</label>
-	        <input type="radio" name="tabs" id="tab-nav-1" checked>
+	        <input type="radio" name="tabs" id="tab-nav-1">
 	        <label for="">Размеры</label>
 	        <input type="radio" name="tabs" id="tab-nav-2">
 	        <label for="">Фундамент и Отделка</label>
 	        <input type="radio" name="tabs" id="tab-nav-3">
 	        <label for="">Контактные данные</label>
-	        <input type="radio" name="tabs" id="tab-nav-4">
+	        <input type="radio" name="tabs" id="tab-nav-4" checked>
 	        <label for="">Расчет стоимости</label>
 	        <div class="heigher-cont clearfix">
 				<span class="heigher"></span>
@@ -70,26 +70,29 @@
 	          				<li class="seas">item-3</li>
 	          			</ul>
 	          		</li>
-	          		<li class="subm"><label for="" id="foundations-submit"></label><span></span></li>
+	          		<li class="subm"><label tabindex="8" for="" id="foundations-submit"></label><span></span></li>
 	          	</ul>
 	          </div>
 	          <div>
 	          	<h4>Заполните поля формы</h4>
-	          	<ul class="sizes">
-	          		<li><input type="number" placeholder="Длинна"></li>
-	          		<li><input type="number" placeholder="Ширина"></li>
-	          		<li><input type="number" placeholder="Сезонность"></li>
-	          		<li><button type="button"></button></li>
+	          	<ul class="contancts">
+	          		<li>
+	          			<input tabindex="9" id="f_name" type="text" name="weasdarew" placeholder="Имя">
+	          			<div class="error-box"></div>
+	          		</li>
+	          		<li>
+	          			<input tabindex="10"  id="f_phone" type="tel" name="werew" placeholder="Телефон">
+	          			<div class="error-box"></div>
+	          		</li>
+	          		<li class="subm"><label tabindex="11" for="" type="button" id="send-form" data-lable="">Рассчитать стоимость</label></li>
 	          	</ul>
 	          </div>
 	          <div>
-	          	<h4>Заполните поля формы</h4>
-	          	<ul class="sizes">
-	          		<li><input type="number" placeholder="Длинна"></li>
-	          		<li><input type="number" placeholder="Ширина"></li>
-	          		<li><input type="number" placeholder="Сезонность"></li>
-	          		<li><button type="button"></button></li>
-	          	</ul>
+	          	<div class="except">
+		          	<span>Заявка на расчет принята</span>
+		          	<span>Наш специалист свяжется и сообщит стоимость</span>
+		          	<label for="tab-nav-1" class="close"></label>
+	          	</div>
 	          </div>
 	        </form>
 	        <span class="parameters">Вы не указали ни одного параметра</span>

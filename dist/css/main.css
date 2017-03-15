@@ -694,6 +694,45 @@ form.tabs ul.foundations li {
     background-position: 7px 9px;
     background-repeat: no-repeat; }
 
+form.tabs ul.contancts .ch {
+  margin-top: -2px;
+  display: none;
+  position: relative;
+  z-index: 0; }
+  form.tabs ul.contancts .ch li {
+    display: block;
+    float: none;
+    border: 1px solid #61ae4d;
+    height: 40px;
+    width: 215px;
+    padding-left: 30px;
+    padding-right: 11px;
+    background-color: #fff;
+    padding-top: 8px;
+    padding-left: 12px;
+    border-top: none;
+    margin-right: 0; }
+    form.tabs ul.contancts .ch li:hover {
+      background-color: #61ae4d;
+      color: #fff;
+      cursor: pointer; }
+    form.tabs ul.contancts .ch li:last-child {
+      -webkit-border-radius: 0 0 3px 3px;
+              border-radius: 0 0 3px 3px; }
+
+form.tabs ul.contancts li {
+  display: inline-block;
+  float: left;
+  margin-right: 6px; }
+  form.tabs ul.contancts li:first-child input {
+    background-image: url(../img/man.gif);
+    background-position: 7px 10px;
+    background-repeat: no-repeat; }
+  form.tabs ul.contancts li:nth-child(2) input {
+    background-image: url(../img/phone-g.png);
+    background-position: 10px;
+    background-repeat: no-repeat; }
+
 form.tabs ul.sizes .ch {
   margin-top: -2px;
   display: none;
@@ -738,47 +777,115 @@ form.tabs ul.sizes li {
     background-repeat: no-repeat;
     cursor: text; }
 
-form.tabs ul.sizes button {
+form.tabs .except {
+  padding-top: 27px;
+  position: relative;
+  max-width: 490px;
+  display: block;
+  margin: 0 auto; }
+  form.tabs .except span {
+    display: block;
+    text-align: center; }
+    form.tabs .except span:first-child {
+      font-family: Roboto-Bold;
+      font-size: 30px; }
+    form.tabs .except span:last-child {
+      font-size: 16px;
+      padding-top: 9px; }
+  form.tabs .except .close {
+    width: 19px;
+    height: 19px;
+    position: relative;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: .8;
+    background-image: none;
+    background-color: transparent; }
+    form.tabs .except .close:hover {
+      opacity: 1;
+      -webkit-transition: .3s;
+      transition: .3s; }
+    form.tabs .except .close::before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #393939;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+      top: 50%;
+      left: 0; }
+    form.tabs .except .close::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #393939;
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      top: 50%;
+      left: 0; }
+
+form.tabs #send-form {
   background: #ff7800;
   position: relative;
   height: 40px;
-  width: 40px;
+  width: auto;
+  padding-left: 15px;
   display: block;
+  padding-right: 32px;
   border: none;
   -webkit-border-radius: 3px;
-          border-radius: 3px; }
-  form.tabs ul.sizes button::after {
+          border-radius: 3px;
+  font-size: 16px;
+  font-family: Roboto-Bold;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border: 1px solid #ff7800;
+  padding-top: 7px; }
+  form.tabs #send-form::after {
     content: '';
     position: absolute;
     top: 12px;
-    left: 17px;
+    right: 6px;
     border: 8px solid transparent;
     border-left: 8px solid #fff; }
-  form.tabs ul.sizes button::before {
+  form.tabs #send-form::before {
     content: '';
     position: absolute;
     left: 0;
-    right: 0;
+    border: 1px solid #fff;
     bottom: 0;
     top: 0;
     margin: auto;
     width: 0;
-    height: 0;
-    background-color: #60ad3e;
-    -webkit-border-radius: 100%;
-            border-radius: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: none;
+            border-radius: none;
     background-size: 100%;
     -webkit-transition: .5s;
     transition: .5s;
     z-index: 0;
-    opacity: 0;
-    border: 1px solid #fff; }
-  form.tabs ul.sizes button:hover::before {
-    height: 100%;
-    width: 100%;
+    opacity: 0; }
+  form.tabs #send-form:hover {
+    background-color: #60ad3e;
     -webkit-transition: .3s;
     transition: .3s;
-    opacity: 1;
-    -webkit-border-radius: 3px;
-            border-radius: 3px;
-    border: 1px solid #fff; }
+    border: 1px solid #e1e1e1; }
+    form.tabs #send-form:hover::before {
+      height: 100%;
+      width: 100%;
+      -webkit-transition: .3s;
+      transition: .3s;
+      opacity: 1;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      border: 1px solid #fff; }

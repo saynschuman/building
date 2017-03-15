@@ -36,6 +36,8 @@
 		}, 200);
      });          	
 
+
+
 	$('#sizes-submit').click(function(){
 		validate($('input#length, input#width'));
 
@@ -170,7 +172,7 @@
                 // то добавляем этому полю класс .not_error,
                 // и ниже в контейнер для ошибок выводим слово " Принято", т.е. валидация для этого поля пройдена успешно
 
-                if(val.length > 2 && val != '' && rv_name.test(val))
+                if(val != '' && rv_name.test(val))
                 {
                    $(el).addClass('not_error');
                    $(el).next('.error-box').html('<div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>')
@@ -245,4 +247,76 @@
 	   		$('#sizes-submit').attr('for', '');
 	   }
      }
+
+     $('input#f_name, input#f_phone').blur( function(){
+		validateContacts(this);
+     }); // end blur()
+
+     $('#send-form').click(function(){
+     	validateContacts($('input#f_name, input#f_phone'));
+     })
+
+     function validateContacts(el) {
+         var id = $(el).attr('id');
+         var val = $(el).val();
+
+       // После того, как поле потеряло фокус, перебираем значения id, совпадающие с id данного поля
+       switch(id)
+       {
+             // Проверка поля "length"
+             case 'f_name':
+             
+                if(val != '') {
+                   $(el).addClass('not_error');
+                   $(el).next('.error-box').html('<div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>')
+                                             .css('color','green')
+                                             .animate({'paddingLeft':'10px'},400)
+                                             .animate({'paddingLeft':'5px'},400);
+                }
+
+              // Иначе, мы удаляем класс not-error и заменяем его на класс error, говоря о том что поле содержит ошибку валидации,
+              // и ниже в наш контейнер выводим сообщение об ошибке и параметры для верной валидации
+
+                else {
+                   $(el).removeClass('not_error').addClass('error');
+                   $(el).next('.error-box').html('<div class="err">Пожалуйста заполните это поле</div>')
+                                              .css('color','#393939')
+                                              .animate({'paddingLeft':'10px'},400)
+                                              .animate({'paddingLeft':'5px'},400);
+                }
+            break;
+
+           // Проверка 
+
+           case 'f_phone':
+
+           var rv_phone = /\s\W\d/; // только цыфры
+
+               if(val.length > 2 && val != '' && rv_phone.test(val)) {
+                  $(el).addClass('not_error');
+                  $(el).next('.error-box').html('<div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>')
+                                            .css('color','green')
+                                            .animate({'paddingLeft':'10px'},400)
+                                            .animate({'paddingLeft':'5px'},400);
+               }
+               else {
+                  $(el).removeClass('not_error').addClass('error');
+                  $(el).next('.error-box').html('<div class="err">Пожалуйста заполните это поле</div>')
+                                             .css('color','#393939')
+                                             .animate({'paddingLeft':'10px'},400)
+                                             .animate({'paddingLeft':'5px'},400);
+               }
+           break;
+       } // end switch(...)	    
+
+	   if($('input#f_name').hasClass('not_error') &
+	   		$('input#f_phone').hasClass('not_error')) {
+       		$('#send-form').attr('for', 'tab-nav-4');
+	   }
+	   else {
+	   		$('#send-form').attr('for', '');
+	   }          	
+     }
+
+     $("#f_phone").mask("+9 (999) 999 99 99");
 }(jQuery));
