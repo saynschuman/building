@@ -51,107 +51,275 @@
     </header>
 
 <main>
-	<div class="container form-count">
-		<h2>Рассчитайте стоимость дома за 3 шага</h2>
-		<div class="tabbed">
-			<label>Параметры</label>
-	        <input type="radio" name="tabs" id="tab-nav-1" checked>
-	        <label for="">Размеры</label>
-	        <input type="radio" name="tabs" id="tab-nav-2">
-	        <label for="">Фундамент и Отделка</label>
-	        <input type="radio" name="tabs" id="tab-nav-3">
-	        <label for="">Контактные данные</label>
-	        <input type="radio" name="tabs" id="tab-nav-4">
-	        <label for="">Расчет стоимости</label>
-	        <div class="heigher-cont clearfix">
-				<span class="heigher"></span>
-		        <span class="heigher"></span>
-		        <span class="heigher"></span>
-		        <span class="heigher"></span>		
-	    	</div>
-	        <form class="tabs">
-	          <div>
-	          	<h4>Заполните поля формы</h4>
-	          	<ul class="sizes">
-	          		<li>
-	          			<input tabindex="1" id="length" type="text" placeholder="Длинна">
-	          			<div class="error-box"></div>
-	          		</li>
-	          		<li>
-	          			<input tabindex="2" id="width" type="text" placeholder="Ширина">
-	          			<div class="error-box"></div>
-	          		</li>
-	          		<li>
-	          			<input tabindex="3" id="season" type="text" placeholder="Сезонность" readonly="true">
-	          			<div class="error-box"><div class="check"><i class="fa fa-caret-down" aria-hidden="true"></i></div></div>
-	          			<ul class="ch choose-season">
-	          				<li class="seas">Лето</li>
-	          				<li class="seas">Зима</li>
-	          			</ul>
-	          		</li>
-	          		<li class="subm"><label tabindex="4" for="" id="sizes-submit"></label><span></span></li>
-	          	</ul>
-	          </div>
-	          <div>
-		          <h4>Заполните поля формы</h4>
-	          	<ul class="foundations">
-	          		<li>
-	          			<input tabindex="5" id="brick" type="text" placeholder="Наружная отделка" readonly="true">
-	          			<div class="error-box"><div class="check"><i class="fa fa-caret-down" aria-hidden="true"></i></div></div>
-	          			<ul class="ch choose-foundations-1">
-	          				<li class="seas">имитация бруса</li>
-	          				<li class="seas">имитация кирпича</li>
-	          				<li class="seas">имитация оргазма</li>
-	          			</ul>
-	          		</li>
-	          		<li>
-	          			<input tabindex="6" id="brush" type="text" placeholder="Внутренняя отделка" readonly="true">
-	          			<div class="error-box"><div class="check"><i class="fa fa-caret-down" aria-hidden="true"></i></div></div>
-	          			<ul class="ch choose-foundations-2">
-	          				<li class="seas">штукатурка</li>
-	          				<li class="seas">облицовка</li>
-	          			</ul>
-	          		</li>
-	          		<li>
-	          			<input tabindex="7" id="foundation" type="text" placeholder="Фундамент" readonly="true">
-	          			<div class="error-box"><div class="check"><i class="fa fa-caret-down" aria-hidden="true"></i></div></div>
-	          			<ul class="ch choose-foundations-3">
-	          				<li class="seas">Ленточный</li>
-	          				<li class="seas">Столбчатый</li>
-	          				<li class="seas">Монолитный</li>
-	          				<li class="seas">Свайный</li>
-	          			</ul>
-	          		</li>
-	          		<li class="subm"><label tabindex="8" for="" id="foundations-submit"></label><span></span></li>
-	          	</ul>
-	          </div>
-	          <div>
-	          	<h4>Заполните поля формы</h4>
-	          	<ul class="contancts">
-	          		<li>
-	          			<input tabindex="9" id="f_name" type="text" name="weasdarew" placeholder="Имя">
-	          			<div class="error-box"></div>
-	          		</li>
-	          		<li>
-	          			<input tabindex="10"  id="f_phone" type="tel" name="werew" placeholder="Телефон">
-	          			<div class="error-box"></div>
-	          		</li>
-	          		<li class="subm"><label tabindex="11" for="" type="button" id="send-form" data-lable="">Рассчитать стоимость</label></li>
-	          	</ul>
-	          </div>
-	          <div>
-	          	<div class="except">
-		          	<span>Заявка на расчет принята</span>
-		          	<span>Наш специалист свяжется и сообщит стоимость</span>
-		          	<label for="tab-nav-1" class="close"></label>
-	          	</div>
-	          </div>
-	        </form>
-	        <div class="parameters">
-		        <div class="par-first"><span>Вы не указали ни одного параметра</span></div>
-		        <div class="par-second"></div>
-	        </div>
-	    </div>
+	<div class="form-count-wrapper">
+		<div class="container form-count">
+			<h2>Рассчитайте стоимость дома за 3 шага</h2>
+			<div class="tabbed">
+				<label>Параметры</label>
+		        <input type="radio" name="tabs" id="tab-nav-1" checked>
+		        <label for="">Размеры</label>
+		        <input type="radio" name="tabs" id="tab-nav-2">
+		        <label for="">Фундамент и Отделка</label>
+		        <input type="radio" name="tabs" id="tab-nav-3">
+		        <label for="">Контактные данные</label>
+		        <input type="radio" name="tabs" id="tab-nav-4">
+		        <label for="">Расчет стоимости</label>
+		        <div class="heigher-cont clearfix">
+					<span class="heigher"></span>
+			        <span class="heigher"></span>
+			        <span class="heigher"></span>
+			        <span class="heigher"></span>		
+		    	</div>
+		        <form class="tabs">
+		          <div>
+		          	<h4>Заполните поля формы</h4>
+		          	<ul class="sizes">
+		          		<li>
+		          			<input tabindex="1" id="length" type="text" placeholder="Длинна">
+		          			<div class="error-box"></div>
+		          		</li>
+		          		<li>
+		          			<input tabindex="2" id="width" type="text" placeholder="Ширина">
+		          			<div class="error-box"></div>
+		          		</li>
+		          		<li>
+		          			<input tabindex="3" id="season" type="text" placeholder="Сезонность" readonly="true">
+		          			<div class="error-box"><div class="check"><i class="fa fa-caret-down" aria-hidden="true"></i></div></div>
+		          			<ul class="ch choose-season">
+		          				<li class="seas">Лето</li>
+		          				<li class="seas">Зима</li>
+		          			</ul>
+		          		</li>
+		          		<li class="subm"><label tabindex="4" for="" id="sizes-submit"></label><span></span></li>
+		          	</ul>
+		          </div>
+		          <div>
+			          <h4>Заполните поля формы</h4>
+		          	<ul class="foundations">
+		          		<li>
+		          			<input tabindex="5" id="brick" type="text" placeholder="Наружная отделка" readonly="true">
+		          			<div class="error-box"><div class="check"><i class="fa fa-caret-down" aria-hidden="true"></i></div></div>
+		          			<ul class="ch choose-foundations-1">
+		          				<li class="seas">имитация бруса</li>
+		          				<li class="seas">имитация кирпича</li>
+		          				<li class="seas">имитация оргазма</li>
+		          			</ul>
+		          		</li>
+		          		<li>
+		          			<input tabindex="6" id="brush" type="text" placeholder="Внутренняя отделка" readonly="true">
+		          			<div class="error-box"><div class="check"><i class="fa fa-caret-down" aria-hidden="true"></i></div></div>
+		          			<ul class="ch choose-foundations-2">
+		          				<li class="seas">штукатурка</li>
+		          				<li class="seas">облицовка</li>
+		          			</ul>
+		          		</li>
+		          		<li>
+		          			<input tabindex="7" id="foundation" type="text" placeholder="Фундамент" readonly="true">
+		          			<div class="error-box"><div class="check"><i class="fa fa-caret-down" aria-hidden="true"></i></div></div>
+		          			<ul class="ch choose-foundations-3">
+		          				<li class="seas">Ленточный</li>
+		          				<li class="seas">Столбчатый</li>
+		          				<li class="seas">Монолитный</li>
+		          				<li class="seas">Свайный</li>
+		          			</ul>
+		          		</li>
+		          		<li class="subm"><label tabindex="8" for="" id="foundations-submit"></label><span></span></li>
+		          	</ul>
+		          </div>
+		          <div>
+		          	<h4>Заполните поля формы</h4>
+		          	<ul class="contancts">
+		          		<li>
+		          			<input tabindex="9" id="f_name" type="text" name="weasdarew" placeholder="Имя">
+		          			<div class="error-box"></div>
+		          		</li>
+		          		<li>
+		          			<input tabindex="10"  id="f_phone" type="tel" name="werew" placeholder="Телефон">
+		          			<div class="error-box"></div>
+		          		</li>
+		          		<li class="subm"><label tabindex="11" for="" type="button" id="send-form" data-lable="">Рассчитать стоимость</label></li>
+		          	</ul>
+		          </div>
+		          <div>
+		          	<div class="except">
+			          	<span>Заявка на расчет принята</span>
+			          	<span>Наш специалист свяжется и сообщит стоимость</span>
+			          	<label for="tab-nav-1" class="close"></label>
+		          	</div>
+		          </div>
+		        </form>
+		        <div class="parameters">
+			        <div class="par-first"><span>Вы не указали ни одного параметра</span></div>
+			        <div class="par-second"></div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+	<div class="container projects">
+		<h2>Проекты каркасных домов</h2>
+		<div class="col-md-4">
+			<div class="proj">
+				<ul class="title">
+					<li>01</li>
+					<li>Проект «Лэнгли»</li>
+				</ul>
+				<a href="">
+					<div class="thumb">
+						<img src="img/thumb-1.jpg" alt="">
+					</div>
+				</a>
+				<div class="info clearfix">
+					<div class="left-align">
+						<ul>
+							<li>Площадь: 140.2 м2</li>
+							<li>Этажей: 2</li>
+						</ul>
+					</div>
+					<div class="right-align">
+						<a class="details" href="#" data-value="Подробнее"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="proj">
+				<ul class="title">
+					<li>01</li>
+					<li>Проект «Лэнгли»</li>
+				</ul>
+				<a href="">
+					<div class="thumb">
+						<img src="img/thumb-2.jpg" alt="">
+					</div>
+				</a>
+				<div class="info clearfix">
+					<div class="left-align">
+						<ul>
+							<li>Площадь: 140.2 м2</li>
+							<li>Этажей: 2</li>
+						</ul>
+					</div>
+					<div class="right-align">
+						<a class="details" href="#" data-value="Подробнее"></a>
+					</div>
+				</div>
+			</div>
+		</div>		
+		<div class="col-md-4">
+			<div class="proj">
+				<ul class="title">
+					<li>01</li>
+					<li>Проект «Лэнгли»</li>
+				</ul>
+				<a href="">
+					<div class="thumb">
+						<img src="img/thumb-3.jpg" alt="">
+					</div>
+				</a>
+				<div class="info clearfix">
+					<div class="left-align">
+						<ul>
+							<li>Площадь: 140.2 м2</li>
+							<li>Этажей: 2</li>
+						</ul>
+					</div>
+					<div class="right-align">
+						<a class="details" href="#" data-value="Подробнее"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="proj">
+				<ul class="title">
+					<li>01</li>
+					<li>Проект «Лэнгли»</li>
+				</ul>
+				<a href="">
+					<div class="thumb">
+						<img src="img/thumb-4.jpg" alt="">
+					</div>
+				</a>
+				<div class="info clearfix">
+					<div class="left-align">
+						<ul>
+							<li>Площадь: 140.2 м2</li>
+							<li>Этажей: 2</li>
+						</ul>
+					</div>
+					<div class="right-align">
+						<a class="details" href="#" data-value="Подробнее"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="proj">
+				<ul class="title">
+					<li>01</li>
+					<li>Проект «Лэнгли»</li>
+				</ul>
+				<a href="">
+					<div class="thumb">
+						<img src="img/thumb-5.jpg" alt="">
+					</div>
+				</a>
+				<div class="info clearfix">
+					<div class="left-align">
+						<ul>
+							<li>Площадь: 140.2 м2</li>
+							<li>Этажей: 2</li>
+						</ul>
+					</div>
+					<div class="right-align">
+						<a class="details" href="#" data-value="Подробнее"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="proj">
+				<ul class="title">
+					<li>01</li>
+					<li>Проект «Лэнгли»</li>
+				</ul>
+				<a href="">
+					<div class="thumb">
+						<img src="img/thumb-6.jpg" alt="">
+					</div>
+				</a>
+				<div class="info clearfix">
+					<div class="left-align">
+						<ul>
+							<li>Площадь: 140.2 м2</li>
+							<li>Этажей: 2</li>
+						</ul>
+					</div>
+					<div class="right-align">
+						<a class="details" href="#" data-value="Подробнее"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container pagination">
+			<ul>
+				<li><a href=""></a></li>
+				<li><a href="">1</a></li>
+				<li><a class="active" href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href=""></a></li>
+			</ul>
+		</div>								
+	</div>
+	<div class="container">
+		<div class="banner">
+			<div class="title">Нужен индивидуальный проект дома?</div>
+			<a href="" class="block">Отправьте заявку и получите его бесплатно </a>
+		</div>
+	</div>
+	<div class="text container">
+		<h5>Проекты каркасных домов</h5>
+		<p>Сегодня загородное строительство получило очень широкое распространение. Многочисленные коттеджные поселки воплощают естественное желание людей быть ближе к природе. Однако строительство коттеджей — это еще и прекрасный повод выразить себя, утвердить свой стиль жизни. Эскизные и архитектурные проекты коттеджей от «Дома Строй Комфорт» — великолепная возможность сделать это. Ведь, по вашему желанию, мы готовы БЕСПЛАТНО предоставить вам любой понравившийся проект из нашей обширной базы или выполнить индивидуальный проект коттеджа, где будут учтены все ваши пожелания.</p>
 	</div>
 	
 </main>
