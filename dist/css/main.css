@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -81,6 +82,30 @@ a {
     text-decoration: none;
     -webkit-transition: .3s;
     transition: .3s; }
+
+.unnormal::before {
+  content: '(по-нормальному)';
+  position: absolute;
+  bottom: -20px;
+  font-size: 10px;
+  text-align: right;
+  width: 100%;
+  padding-right: 8px; }
+
+.jq-selectbox__select {
+  border: 1px solid #61ae4d;
+  height: 40px;
+  width: 215px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  padding-left: 30px;
+  padding-right: 11px;
+  background: #fff; }
+  .jq-selectbox__select:hover {
+    background: #fff; }
+
+.placeholder {
+  padding-top: 20px; }
 
 @font-face {
   font-family: Roboto-Regular;
@@ -562,22 +587,35 @@ form.tabs h4 {
   display: block;
   margin-bottom: 23px; }
 
-form.tabs ul.sizes input.error {
-  border: 1px solid #db1717;
-  -webkit-box-shadow: 0 0 10px 0 rgba(255, 0, 0, 0.4);
-          box-shadow: 0 0 10px 0 rgba(255, 0, 0, 0.4); }
-
-form.tabs ul.sizes input.not_error {
+form.tabs input {
   border: 1px solid #61ae4d;
-  -webkit-box-shadow: none;
-          box-shadow: none; }
+  height: 40px;
+  width: 215px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  padding-left: 30px;
+  padding-right: 11px;
+  z-index: 1;
+  position: relative; }
+  form.tabs input.error {
+    border: 1px solid #db1717;
+    -webkit-box-shadow: 0 0 10px 0 rgba(255, 0, 0, 0.4);
+            box-shadow: 0 0 10px 0 rgba(255, 0, 0, 0.4); }
+  form.tabs input.not_error {
+    border: 1px solid #61ae4d;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
-form.tabs ul.sizes .check {
+form.tabs .check {
   position: absolute;
   margin-top: -31px;
-  margin-left: 185px; }
+  margin-left: 185px;
+  z-index: 2;
+  color: green; }
+  form.tabs .check .fa-caret-down {
+    padding-left: 10px; }
 
-form.tabs ul.sizes .err {
+form.tabs .err {
   background-color: #cecece;
   padding: 10px 7px;
   font-size: 12px;
@@ -585,7 +623,7 @@ form.tabs ul.sizes .err {
           border-radius: 3px;
   position: absolute;
   margin-top: 12px; }
-  form.tabs ul.sizes .err::after {
+  form.tabs .err::after {
     content: '';
     position: absolute;
     top: -15px;
@@ -593,32 +631,7 @@ form.tabs ul.sizes .err {
     border: 7px solid transparent;
     border-bottom: 9px solid #cecece; }
 
-form.tabs ul.sizes li {
-  display: inline-block;
-  float: left;
-  margin-right: 6px; }
-  form.tabs ul.sizes li input {
-    border: 1px solid #61ae4d;
-    height: 40px;
-    width: 215px;
-    -webkit-border-radius: 3px;
-            border-radius: 3px;
-    padding-left: 30px;
-    padding-right: 11px; }
-  form.tabs ul.sizes li:first-child input {
-    background-image: url(../img/input-height.png);
-    background-position: 6px 17px;
-    background-repeat: no-repeat; }
-  form.tabs ul.sizes li:nth-child(2) input {
-    background-image: url(../img/input-width.png);
-    background-position: 13px 11px;
-    background-repeat: no-repeat; }
-  form.tabs ul.sizes li:nth-child(3) input {
-    background-image: url(../img/input-sn.png);
-    background-position: 6px 11px;
-    background-repeat: no-repeat; }
-
-form.tabs ul.sizes label {
+form.tabs label {
   background: #ff7800;
   position: relative;
   height: 40px;
@@ -633,13 +646,71 @@ form.tabs ul.sizes label {
   cursor: pointer;
   -webkit-transition: .3s;
   transition: .3s; }
-  form.tabs ul.sizes label:hover {
+  form.tabs label:hover {
     background-color: #60ad3e;
     -webkit-transition: .3s;
     transition: .3s; }
 
-form.tabs ul.sizes .subm {
-  position: relative; }
+form.tabs ul.foundations li {
+  display: inline-block;
+  float: left;
+  margin-right: 6px; }
+  form.tabs ul.foundations li:first-child input {
+    background-image: url(../img/brick.gif);
+    background-position: 6px 12px;
+    background-repeat: no-repeat; }
+  form.tabs ul.foundations li:nth-child(2) input {
+    background-image: url(../img/brush.gif);
+    background-position: 10px;
+    background-repeat: no-repeat; }
+  form.tabs ul.foundations li:nth-child(3) input {
+    background-image: url(../img/foundation.gif);
+    background-position: 7px 9px;
+    background-repeat: no-repeat; }
+
+form.tabs ul.sizes .choose-season {
+  margin-top: -2px;
+  display: none;
+  position: relative;
+  z-index: 0; }
+  form.tabs ul.sizes .choose-season li {
+    display: block;
+    float: none;
+    border: 1px solid #61ae4d;
+    height: 40px;
+    width: 215px;
+    padding-left: 30px;
+    padding-right: 11px;
+    background-color: #fff;
+    padding-top: 8px;
+    padding-left: 12px;
+    border-top: none;
+    margin-right: 0; }
+    form.tabs ul.sizes .choose-season li:hover {
+      background-color: #61ae4d;
+      color: #fff;
+      cursor: pointer; }
+    form.tabs ul.sizes .choose-season li:last-child {
+      -webkit-border-radius: 0 0 3px 3px;
+              border-radius: 0 0 3px 3px; }
+
+form.tabs ul.sizes li {
+  display: inline-block;
+  float: left;
+  margin-right: 6px; }
+  form.tabs ul.sizes li:first-child input {
+    background-image: url(../img/input-height.png);
+    background-position: 6px 17px;
+    background-repeat: no-repeat; }
+  form.tabs ul.sizes li:nth-child(2) input {
+    background-image: url(../img/input-width.png);
+    background-position: 13px 11px;
+    background-repeat: no-repeat; }
+  form.tabs ul.sizes li:nth-child(3) input {
+    background-image: url(../img/input-sn.png);
+    background-position: 6px 11px;
+    background-repeat: no-repeat;
+    cursor: text; }
 
 form.tabs ul.sizes button {
   background: #ff7800;

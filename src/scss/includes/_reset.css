@@ -96,3 +96,31 @@ a {
 		transition: .3s;
 	}
 }
+
+.unnormal {
+	 &::before {
+     content: '(по-нормальному)';
+     position: absolute;
+     bottom: -20px;
+     font-size: 10px;
+     text-align: right;
+     width: 100%;
+     padding-right: 8px;		
+	}
+}
+
+.jq-selectbox__select {
+	border: 1px solid #61ae4d;
+	height: 40px;
+	width: 215px;
+	border-radius: 3px;
+	padding-left: 30px;
+	padding-right: 11px;
+	background: #fff;
+	&:hover {
+		background: #fff;
+	}
+}
+.placeholder {
+		padding-top: 20px;
+	}

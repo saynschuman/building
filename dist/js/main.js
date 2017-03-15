@@ -1,14 +1,48 @@
 (function ($) {
 
-
+	$('input#season').focus(function(){
+		$('.choose-season').show();
+     }); // end blur()
+	$('input#season').blur(function(){
+		setTimeout(function(){
+		  $('.choose-season').hide();
+		}, 100);
+     }); // end blur()
 
 	$('#sizes-submit').click(function(){
-		validate($('input#length, input#width, input#season'));
+		validate($('input#length, input#width'));
+
+		var value = $('input#season').val();
+
+              if(value != '')
+              {
+                 $('input#season').addClass('not_error');
+                 $('input#season').next('.error-box').html('<div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>')
+                                           .css('color','green')
+                                           .animate({'paddingLeft':'10px'},400)
+                                           .animate({'paddingLeft':'5px'},400);
+              }
+              else
+              {
+                 $('input#season').removeClass('not_error').addClass('error');
+                 $('input#season').next('.error-box').html('<div class="err">Пожалуйста заполните это поле</div>')
+                                           .css('color','#393939')
+                                           .animate({'paddingLeft':'10px'},400)
+                                           .animate({'paddingLeft':'5px'},400);
+              }
+
+
 	})
+
+	$('.choose-season li').click(function(){
+		$('#season').val($(this).html()).next('.error-box').html('<div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>');
+		$('input#season').addClass('not_error');
+	})
+	
 
      // Устанавливаем обработчик потери фокуса для всех полей ввода текста
 
-     $('input#length, input#width, input#season').unbind().blur( function(){
+     $('input#length, input#width').blur( function(){
 		validate(this);
      }); // end blur()
 
@@ -24,6 +58,7 @@
              // Проверка поля "length"
              case 'length':
                 var rv_name = /^[0-9 ]+$/; // только цыфры
+                var let_numb = /^[а-яА-ЯёЁa-zA-Z0-9]+$/; // цыфры и буквы
 
                 // Eсли длина имени больше 2 символов, оно не пустое и удовлетворяет рег. выражению,
                 // то добавляем этому полю класс .not_error,
