@@ -3,13 +3,13 @@
 		<h2>Рассчитайте стоимость дома за 3 шага</h2>
 		<div class="tabbed">
 			<label>Параметры</label>
-	        <input type="radio" name="tabs" id="tab-nav-1">
+	        <input type="radio" name="tabs" id="tab-nav-1" checked>
 	        <label for="">Размеры</label>
 	        <input type="radio" name="tabs" id="tab-nav-2">
 	        <label for="">Фундамент и Отделка</label>
 	        <input type="radio" name="tabs" id="tab-nav-3">
 	        <label for="">Контактные данные</label>
-	        <input type="radio" name="tabs" id="tab-nav-4" checked>
+	        <input type="radio" name="tabs" id="tab-nav-4">
 	        <label for="">Расчет стоимости</label>
 	        <div class="heigher-cont clearfix">
 				<span class="heigher"></span>
@@ -47,27 +47,27 @@
 	          			<input tabindex="5" id="brick" type="text" placeholder="Наружная отделка" readonly="true">
 	          			<div class="error-box"><div class="check"><i class="fa fa-caret-down" aria-hidden="true"></i></div></div>
 	          			<ul class="ch choose-foundations-1">
-	          				<li class="seas">item-1</li>
-	          				<li class="seas">item-2</li>
-	          				<li class="seas">item-3</li>
+	          				<li class="seas">имитация бруса</li>
+	          				<li class="seas">имитация кирпича</li>
+	          				<li class="seas">имитация оргазма</li>
 	          			</ul>
 	          		</li>
 	          		<li>
 	          			<input tabindex="6" id="brush" type="text" placeholder="Внутренняя отделка" readonly="true">
 	          			<div class="error-box"><div class="check"><i class="fa fa-caret-down" aria-hidden="true"></i></div></div>
 	          			<ul class="ch choose-foundations-2">
-	          				<li class="seas">item-1</li>
-	          				<li class="seas">item-2</li>
-	          				<li class="seas">item-3</li>
+	          				<li class="seas">штукатурка</li>
+	          				<li class="seas">облицовка</li>
 	          			</ul>
 	          		</li>
 	          		<li>
 	          			<input tabindex="7" id="foundation" type="text" placeholder="Фундамент" readonly="true">
 	          			<div class="error-box"><div class="check"><i class="fa fa-caret-down" aria-hidden="true"></i></div></div>
 	          			<ul class="ch choose-foundations-3">
-	          				<li class="seas">item-1</li>
-	          				<li class="seas">item-2</li>
-	          				<li class="seas">item-3</li>
+	          				<li class="seas">Ленточный</li>
+	          				<li class="seas">Столбчатый</li>
+	          				<li class="seas">Монолитный</li>
+	          				<li class="seas">Свайный</li>
 	          			</ul>
 	          		</li>
 	          		<li class="subm"><label tabindex="8" for="" id="foundations-submit"></label><span></span></li>
@@ -95,7 +95,10 @@
 	          	</div>
 	          </div>
 	        </form>
-	        <span class="parameters">Вы не указали ни одного параметра</span>
+	        <div class="parameters">
+		        <div class="par-first"><span>Вы не указали ни одного параметра</span></div>
+		        <div class="par-second"></div>
+	        </div>
 	    </div>
 	</div>
 	

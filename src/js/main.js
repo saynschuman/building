@@ -41,7 +41,17 @@
 	$('#sizes-submit').click(function(){
 		validate($('input#length, input#width'));
 
-		var value = $('input#season').val();
+		var value = $('input#season').val(),
+			length = $('input#length').val(),
+			width = $('input#width').val();
+
+	   if($('input#length').hasClass('not_error') &
+	   		$('input#width').hasClass('not_error') & 
+				$('input#season').hasClass('not_error')) {
+       			$('.par-first').html("<span>Длина: <b>" + length + "</b></span><span>Ширина: <b>" + width + "</b></span> <span> Сезонность: <b>" + value + "</b></span>");
+	   }			
+
+		
 
               if(value != '')
               {
@@ -66,6 +76,12 @@
 		var valueBrick = $('input#brick').val();
 		var valueBrush = $('input#brush').val();
 		var valueFoundation = $('input#foundation').val();
+
+	   if($('input#brick').hasClass('not_error') &
+	   		$('input#brush').hasClass('not_error') & 
+				$('input#foundation').hasClass('not_error')) {
+       			$('.par-second').html("<span>Наружная отделка: <b>" + valueBrick + "</b></span><span>Внутренняя отделка: <b>" + valueBrush + "</b></span> <span> Фундамент: <b>" + valueFoundation + "</b></span>");
+	   }			
 
               if(valueBrick != '')
               {

@@ -408,9 +408,14 @@ header.header {
 	height: 194px;
 	background-color: #fff;
 	margin: 2px;
-	padding: 23px 17px;
+	padding: 8px 13px;
 	font-size: 14px;
 	color: #161616;
+	overflow: auto;
+	span {
+		display: block;
+		margin-bottom: 2px;
+	}
 }
 
 .tabs > div {
