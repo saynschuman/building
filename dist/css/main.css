@@ -793,7 +793,8 @@ form.tabs .except {
     text-align: center; }
     form.tabs .except span:first-child {
       font-family: Roboto-Bold;
-      font-size: 30px; }
+      font-size: 30px;
+      padding-bottom: 7px; }
     form.tabs .except span:last-child {
       font-size: 16px;
       padding-top: 9px; }
