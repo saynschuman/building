@@ -6,8 +6,35 @@
 	$('input#season').blur(function(){
 		setTimeout(function(){
 		  $('.choose-season').hide();
-		}, 100);
+		}, 200);
+     });
+
+	$('input#brick').focus(function(){
+		$('.choose-foundations-1').show();
      }); // end blur()
+	$('input#brick').blur(function(){
+		setTimeout(function(){
+		  $('.choose-foundations-1').hide();
+		}, 200);
+     });
+
+	$('input#brush').focus(function(){
+		$('.choose-foundations-2').show();
+     }); // end blur()
+	$('input#brush').blur(function(){
+		setTimeout(function(){
+		  $('.choose-foundations-2').hide();
+		}, 200);
+     });
+
+	$('input#foundation').focus(function(){
+		$('.choose-foundations-3').show();
+     }); // end blur()
+	$('input#foundation').blur(function(){
+		setTimeout(function(){
+		  $('.choose-foundations-3').hide();
+		}, 200);
+     });          	
 
 	$('#sizes-submit').click(function(){
 		validate($('input#length, input#width'));
@@ -30,14 +57,93 @@
                                            .animate({'paddingLeft':'10px'},400)
                                            .animate({'paddingLeft':'5px'},400);
               }
-
-
 	})
+
+	$('#foundations-submit').click(function(){
+
+		var valueBrick = $('input#brick').val();
+		var valueBrush = $('input#brush').val();
+		var valueFoundation = $('input#foundation').val();
+
+              if(valueBrick != '')
+              {
+                 $('input#brick').addClass('not_error');
+                 $('input#brick').next('.error-box').html('<div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>')
+                                           .css('color','green')
+                                           .animate({'paddingLeft':'10px'},400)
+                                           .animate({'paddingLeft':'5px'},400);
+              }
+              else
+              {
+                 $('input#brick').removeClass('not_error').addClass('error');
+                 $('input#brick').next('.error-box').html('<div class="err">Пожалуйста заполните это поле</div>')
+                                           .css('color','#393939')
+                                           .animate({'paddingLeft':'10px'},400)
+                                           .animate({'paddingLeft':'5px'},400);
+              }
+
+              if(valueBrush != '')
+              {
+                 $('input#brush').addClass('not_error');
+                 $('input#brush').next('.error-box').html('<div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>')
+                                           .css('color','green')
+                                           .animate({'paddingLeft':'10px'},400)
+                                           .animate({'paddingLeft':'5px'},400);
+              }
+              else
+              {
+                 $('input#brush').removeClass('not_error').addClass('error');
+                 $('input#brush').next('.error-box').html('<div class="err">Пожалуйста заполните это поле</div>')
+                                           .css('color','#393939')
+                                           .animate({'paddingLeft':'10px'},400)
+                                           .animate({'paddingLeft':'5px'},400);
+              }
+
+              if(valueFoundation != '')
+              {
+                 $('input#foundation').addClass('not_error');
+                 $('input#foundation').next('.error-box').html('<div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>')
+                                           .css('color','green')
+                                           .animate({'paddingLeft':'10px'},400)
+                                           .animate({'paddingLeft':'5px'},400);
+              }
+              else
+              {
+                 $('input#foundation').removeClass('not_error').addClass('error');
+                 $('input#foundation').next('.error-box').html('<div class="err">Пожалуйста заполните это поле</div>')
+                                           .css('color','#393939')
+                                           .animate({'paddingLeft':'10px'},400)
+                                           .animate({'paddingLeft':'5px'},400);
+              }     
+	   if($('input#brick').hasClass('not_error') &
+	   		$('input#brush').hasClass('not_error') & 
+				$('input#foundation').hasClass('not_error')) {
+       		$('#foundations-submit').attr('for', 'tab-nav-3');
+	   }
+	   else {
+	   		$('#foundations-submit').attr('for', '');
+	   }                                     
+	})	
 
 	$('.choose-season li').click(function(){
 		$('#season').val($(this).html()).next('.error-box').html('<div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>');
 		$('input#season').addClass('not_error');
 	})
+
+	$('.choose-foundations-1 li').click(function(){
+		$('#brick').val($(this).html()).next('.error-box').html('<div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>');
+		$('input#brick').addClass('not_error');
+	})
+
+	$('.choose-foundations-2 li').click(function(){
+		$('#brush').val($(this).html()).next('.error-box').html('<div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>');
+		$('input#brush').addClass('not_error');
+	})
+
+	$('.choose-foundations-3 li').click(function(){
+		$('#foundation').val($(this).html()).next('.error-box').html('<div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>');
+		$('input#foundation').addClass('not_error');
+	})			
 	
 
      // Устанавливаем обработчик потери фокуса для всех полей ввода текста
@@ -128,7 +234,7 @@
               }
           break;
 
-       } // end switch(...)
+       } // end switch(...)	   
 
 	   if($('input#length').hasClass('not_error') &
 	   		$('input#width').hasClass('not_error') & 
@@ -138,6 +244,5 @@
 	   else {
 	   		$('#sizes-submit').attr('for', '');
 	   }
-
      }
 }(jQuery));
