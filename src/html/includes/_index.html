@@ -4,13 +4,13 @@
 		<div class="tabbed">
 			<label>Параметры</label>
 	        <input type="radio" name="tabs" id="tab-nav-1" checked>
-	        <label for="tab-nav-1">Размеры</label>
+	        <label for="">Размеры</label>
 	        <input type="radio" name="tabs" id="tab-nav-2">
-	        <label for="tab-nav-2">Фундамент и Отделка</label>
+	        <label for="">Фундамент и Отделка</label>
 	        <input type="radio" name="tabs" id="tab-nav-3">
-	        <label for="tab-nav-3">Контактные данные</label>
+	        <label for="">Контактные данные</label>
 	        <input type="radio" name="tabs" id="tab-nav-4">
-	        <label for="tab-nav-4">Расчет стоимости</label>
+	        <label for="">Расчет стоимости</label>
 	        <div class="heigher-cont clearfix">
 				<span class="heigher"></span>
 		        <span class="heigher"></span>
@@ -21,6 +21,24 @@
 	          <div>
 	          	<h4>Заполните поля формы</h4>
 	          	<ul class="sizes">
+	          		<li>
+	          			<input tabindex="1" id="length" type="text" placeholder="Длинна">
+	          			<div class="error-box"></div>
+	          		</li>
+	          		<li>
+	          			<input tabindex="2" id="width" type="text" placeholder="Ширина">
+	          			<div class="error-box"></div>
+	          		</li>
+	          		<li>
+	          			<input tabindex="3" id="season" type="text" placeholder="Сезонность">
+	          			<div class="error-box"></div>
+	          		</li>
+	          		<li class="subm"><label tabindex="4" for="" id="sizes-submit" type="button"></label><span></span></li>
+	          	</ul>
+	          </div>
+	          <div>
+		          <h4>Заполните поля формы</h4>
+	          	<ul class="sizes">
 	          		<li><input type="number" placeholder="Длинна"></li>
 	          		<li><input type="number" placeholder="Ширина"></li>
 	          		<li><input type="number" placeholder="Сезонность"></li>
@@ -28,16 +46,22 @@
 	          	</ul>
 	          </div>
 	          <div>
-		          <h4>Заполните поля формы</h4>
-		          <p>Maecenas dictum, urna ut consequat condimentum, est dui commodo diam, ac pretium dui ante eu quam. Curabitur posuere metus nec tellus venenatis placerat. Ut egestas neque in odio vulputate gravida. In at justo ac est laoreet eleifend vel quis arcu.</p>
+	          	<h4>Заполните поля формы</h4>
+	          	<ul class="sizes">
+	          		<li><input type="number" placeholder="Длинна"></li>
+	          		<li><input type="number" placeholder="Ширина"></li>
+	          		<li><input type="number" placeholder="Сезонность"></li>
+	          		<li><button type="button"></button></li>
+	          	</ul>
 	          </div>
 	          <div>
 	          	<h4>Заполните поля формы</h4>
-	          	<p>Duis luctus dolor ac erat luctus hendrerit. Aenean id congue magna. Proin sit amet elit vel lacus ornare dignissim imperdiet nec odio. Maecenas condimentum egestas lorem et laoreet. Donec ut leo non purus rutrum euismod vel faucibus nunc. Curabitur vel mauris nisi,</p>
-	          </div>
-	          <div>
-	          	<h4>Заполните поля формы</h4>
-	          	<p>Fusce vel eros eu lectus ultricies fermentum vestibulum adipiscing odio. Suspendisse ultricies, metus nec dapibus pharetra, quam arcu vulputate nisl, a pretium nisi velit id ante. Nunc auctor augue sit amet orci vestibulum id placerat nulla pellentesque.</p>
+	          	<ul class="sizes">
+	          		<li><input type="number" placeholder="Длинна"></li>
+	          		<li><input type="number" placeholder="Ширина"></li>
+	          		<li><input type="number" placeholder="Сезонность"></li>
+	          		<li><button type="button"></button></li>
+	          	</ul>
 	          </div>
 	        </form>
 	        <span class="parameters">Вы не указали ни одного параметра</span>

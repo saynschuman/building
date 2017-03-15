@@ -154,6 +154,9 @@ a {
   font-family: Roboto-ThinItalic;
   src: url(../fonts/roboto/Roboto-ThinItalic.ttf); }
 
+*:focus {
+  outline: none; }
+
 h1 {
   font-size: 48px;
   font-family: Roboto-Bold;
@@ -441,10 +444,12 @@ header.header {
           box-sizing: border-box; }
 
 ::-moz-selection {
-  background-color: #61ae4d; }
+  background-color: #61ae4d;
+  color: #fff; }
 
 ::selection {
-  background-color: #61ae4d; }
+  background-color: #61ae4d;
+  color: #fff; }
 
 .tabbed {
   width: 100%;
@@ -460,7 +465,6 @@ header.header {
   float: left;
   text-align: center;
   padding: 12px 0;
-  cursor: pointer;
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
   background-color: #478d35;
@@ -534,10 +538,10 @@ header.header {
   border: 2px solid #61ae4d;
   border-top: none; }
 
-#tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
+#tab-nav-4:checked ~ .tabs > div:nth-of-type(4),
 #tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
 #tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
-#tab-nav-4:checked ~ .tabs > div:nth-of-type(4) {
+#tab-nav-1:checked ~ .tabs > div:nth-of-type(1) {
   -webkit-transform: rotateX(0deg);
           transform: rotateX(0deg);
   opacity: 1;
@@ -557,6 +561,37 @@ header.header {
 form.tabs h4 {
   display: block;
   margin-bottom: 23px; }
+
+form.tabs ul.sizes input.error {
+  border: 1px solid #db1717;
+  -webkit-box-shadow: 0 0 10px 0 rgba(255, 0, 0, 0.4);
+          box-shadow: 0 0 10px 0 rgba(255, 0, 0, 0.4); }
+
+form.tabs ul.sizes input.not_error {
+  border: 1px solid #61ae4d;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+form.tabs ul.sizes .check {
+  position: absolute;
+  margin-top: -31px;
+  margin-left: 185px; }
+
+form.tabs ul.sizes .err {
+  background-color: #cecece;
+  padding: 10px 7px;
+  font-size: 12px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  position: absolute;
+  margin-top: 12px; }
+  form.tabs ul.sizes .err::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 16px;
+    border: 7px solid transparent;
+    border-bottom: 9px solid #cecece; }
 
 form.tabs ul.sizes li {
   display: inline-block;
@@ -582,6 +617,29 @@ form.tabs ul.sizes li {
     background-image: url(../img/input-sn.png);
     background-position: 6px 11px;
     background-repeat: no-repeat; }
+
+form.tabs ul.sizes label {
+  background: #ff7800;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  display: block;
+  border: none;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-image: url(../img/submit.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s; }
+  form.tabs ul.sizes label:hover {
+    background-color: #60ad3e;
+    -webkit-transition: .3s;
+    transition: .3s; }
+
+form.tabs ul.sizes .subm {
+  position: relative; }
 
 form.tabs ul.sizes button {
   background: #ff7800;
