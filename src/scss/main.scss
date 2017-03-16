@@ -19,6 +19,7 @@ h2 {
 	font-family: Roboto-Bold;
 	padding: 40px 0;
 	text-align: center;
+	line-height: 1.2;
 }
 
 h4 {
@@ -1182,5 +1183,17 @@ form.tabs {
 				}
 			}
 		}
+	}
+}
+.realized-projects {
+	h2 {
+		padding-bottom: 10px;
+	}
+	.sub-t {
+		font-size: 30px;
+		color: #61ae4d;
+		font-family: Roboto-Bold;
+		text-align: center;
+		padding-bottom: 20px;
 	}
 }

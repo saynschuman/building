@@ -193,7 +193,8 @@ h2 {
   font-size: 36px;
   font-family: Roboto-Bold;
   padding: 40px 0;
-  text-align: center; }
+  text-align: center;
+  line-height: 1.2; }
 
 h4 {
   font-size: 18px; }
@@ -1234,3 +1235,13 @@ form.tabs #send-form {
             -webkit-border-radius: 4px;
                     border-radius: 4px;
             border: 1px solid #fff; }
+
+.realized-projects h2 {
+  padding-bottom: 10px; }
+
+.realized-projects .sub-t {
+  font-size: 30px;
+  color: #61ae4d;
+  font-family: Roboto-Bold;
+  text-align: center;
+  padding-bottom: 20px; }

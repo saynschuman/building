@@ -335,8 +335,8 @@
      }
 
      $("#f_phone").mask("+9 (999) 999 99 99");
-
-
+     $("#form-tel").mask("+9 (999) 999 99 99");
+     
 
   $('.inp-block input').focus(function(){
       $(this).parent().children('ul').show();
