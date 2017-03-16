@@ -335,4 +335,21 @@
      }
 
      $("#f_phone").mask("+9 (999) 999 99 99");
+
+
+
+  $('.inp-block input').focus(function(){
+      $(this).parent().children('ul').show();
+  });
+
+  $('.txt').click(function(){
+    var txt = $(this).text();
+    var input = $(this).parent().parent().children('input');
+    input.val(txt);
+    $(this).parent().parent().children('ul').hide();
+  })
+  
+  $('.inp-block input').blur(function(){
+      $(this).parent().children('ul').fadeOut(300); 
+  });
 }(jQuery));

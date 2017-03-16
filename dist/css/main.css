@@ -1062,3 +1062,92 @@ form.tabs #send-form {
   .text p {
     font-size: 16px;
     line-height: 1.6; }
+
+.count-head-wrapper {
+  width: 100%;
+  background: #61ae4d;
+  padding: 26.5px 0;
+  color: #fff; }
+  .count-head-wrapper .title {
+    font-size: 40px;
+    font-family: Roboto-Bold;
+    max-width: 460px;
+    line-height: 1.2; }
+  .count-head-wrapper .sub-title {
+    font-size: 18px;
+    max-width: 450px;
+    margin-top: 5px; }
+
+.count-body-wrapper .left {
+  width: -webkit-calc(100% - 480px);
+  width: calc(100% - 480px); }
+  .count-body-wrapper .left .inp-block label {
+    display: block;
+    font-family: Roboto-Medium;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 5px; }
+  .count-body-wrapper .left .inp-block input {
+    border: 1px solid #61ae4d;
+    height: 40px;
+    width: 215px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    padding-left: 13px;
+    padding-right: 11px;
+    position: relative;
+    cursor: pointer; }
+  .count-body-wrapper .left .inp-block i {
+    z-index: 2;
+    position: relative;
+    color: #61ae4d;
+    margin-left: -26px; }
+  .count-body-wrapper .left .inp-block ul {
+    margin-top: -2px;
+    display: none;
+    position: absolute;
+    z-index: 3; }
+    .count-body-wrapper .left .inp-block ul li {
+      display: block;
+      float: none;
+      border: 1px solid #61ae4d;
+      height: 40px;
+      width: 215px;
+      padding-left: 30px;
+      padding-right: 11px;
+      background-color: #fff;
+      padding-top: 8px;
+      padding-left: 12px;
+      border-bottom: none;
+      margin-right: 0; }
+      .count-body-wrapper .left .inp-block ul li:hover {
+        background-color: #61ae4d;
+        color: #fff;
+        cursor: pointer; }
+      .count-body-wrapper .left .inp-block ul li:last-child {
+        -webkit-border-radius: 0 0 3px 3px;
+                border-radius: 0 0 3px 3px;
+        border: 1px solid #61ae4d; }
+
+.count-body-wrapper .right {
+  width: 480px;
+  height: 670px;
+  background-image: url(../img/count-2.jpg);
+  margin-top: -238px; }
+  .count-body-wrapper .right .get-to-know {
+    text-align: center;
+    padding-top: 347px; }
+    .count-body-wrapper .right .get-to-know .title {
+      font-size: 24px;
+      font-family: Roboto-Bold;
+      max-width: 350px;
+      display: block;
+      margin: 0 auto;
+      line-height: 1.2;
+      margin-bottom: 5px; }
+    .count-body-wrapper .right .get-to-know .sub-title {
+      font-size: 16px;
+      max-width: 400px;
+      display: block;
+      margin: 0 auto;
+      line-height: 1.2; }
