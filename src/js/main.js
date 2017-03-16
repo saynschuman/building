@@ -352,4 +352,17 @@
   $('.inp-block input').blur(function(){
       $(this).parent().children('ul').fadeOut(300); 
   });
+
+  // lightSlider
+
+$('#lightSlider').lightSlider({
+    gallery: true,
+    item: 1,
+    loop: true,
+    slideMargin: 0,
+    thumbItem: 9
+});
+
+
+
 }(jQuery));

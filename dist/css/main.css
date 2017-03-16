@@ -1236,12 +1236,105 @@ form.tabs #send-form {
                     border-radius: 4px;
             border: 1px solid #fff; }
 
-.realized-projects h2 {
-  padding-bottom: 10px; }
+.realized-projects {
+  padding-bottom: 30px; }
+  .realized-projects h2 {
+    padding-bottom: 10px; }
+  .realized-projects .sub-t {
+    font-size: 30px;
+    color: #61ae4d;
+    font-family: Roboto-Bold;
+    text-align: center;
+    padding-bottom: 20px; }
+  .realized-projects .left {
+    width: -webkit-calc(100% - 420px);
+    width: calc(100% - 420px); }
+    .realized-projects .left .img-wr {
+      overflow: hidden;
+      height: 400px; }
+      .realized-projects .left .img-wr img {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+        -webkit-transition: 2s;
+        transition: 2s; }
+  .realized-projects .right {
+    background-color: #61ae4d;
+    width: 420px;
+    padding: 26px 28px; }
+    .realized-projects .right .title {
+      font-size: 30px;
+      color: #fff;
+      font-family: Roboto-Bold; }
+    .realized-projects .right .sub-title {
+      font-size: 18px;
+      font-family: Roboto-Bold;
+      color: #fff;
+      margin-top: 20px; }
+    .realized-projects .right p {
+      font-size: 16px;
+      line-height: 1.5; }
+    .realized-projects .right b {
+      font-family: Roboto-Bold; }
 
-.realized-projects .sub-t {
-  font-size: 30px;
-  color: #61ae4d;
-  font-family: Roboto-Bold;
-  text-align: center;
-  padding-bottom: 20px; }
+.demo {
+  width: 100%; }
+  .demo ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom: 0; }
+  .demo img {
+    display: block;
+    height: auto;
+    width: 100%; }
+
+.lSAction > .lSNext {
+  right: 430px; }
+
+.lSSlideOuter .lSPager.lSGallery li {
+  opacity: .4;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
+  opacity: 1;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  -webkit-transition: 1s;
+  transition: 1s; }
+  .lSSlideOuter .lSPager.lSGallery li.active:hover, .lSSlideOuter .lSPager.lSGallery li:hover:hover {
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    -webkit-transition: 1s;
+    transition: 1s; }
+
+.lSAction > .lSNext {
+  height: 36px;
+  width: 36px;
+  background-color: #60ad3e;
+  margin-left: 12px;
+  background-image: url(../img/submit.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: .7s;
+  transition: .7s;
+  opacity: 1; }
+  .lSAction > .lSNext:hover {
+    background-color: #ff7800; }
+
+.lSAction > .lSPrev {
+  height: 36px;
+  width: 36px;
+  background-color: #60ad3e;
+  margin-left: 12px;
+  background-image: url(../img/submit.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  opacity: 1; }
+  .lSAction > .lSPrev:hover {
+    background-color: #ff7800; }

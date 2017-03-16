@@ -1186,6 +1186,7 @@ form.tabs {
 	}
 }
 .realized-projects {
+	padding-bottom: 30px;
 	h2 {
 		padding-bottom: 10px;
 	}
@@ -1196,4 +1197,101 @@ form.tabs {
 		text-align: center;
 		padding-bottom: 20px;
 	}
+	.left {
+		width: calc(100% - 420px);
+		.img-wr {
+			overflow: hidden;
+			height: 400px;
+			img {
+				transform: scale(1.2);
+				transition: 2s;
+			}
+		}
+	}
+	.right {
+		background-color: #61ae4d;
+		width: 420px;
+		padding: 26px 28px;
+		.title {
+			font-size: 30px;
+			color: #fff;
+			font-family: Roboto-Bold;
+		}
+		.sub-title {
+			font-size: 18px;
+			font-family: Roboto-Bold;
+			color: #fff;
+			margin-top: 20px;
+		}
+		p {
+			font-size: 16px;
+			line-height: 1.5;
+		}
+		b {
+			font-family: Roboto-Bold;
+		}
+	}
+}
+
+.demo {
+    width:100%;
+	ul {
+	    list-style: none outside none;
+	    padding-left: 0;
+	    margin-bottom:0;
+	}
+	img {
+	    display: block;
+	    height: auto;
+	    width: 100%;
+	}    
+}
+
+.lSAction>.lSNext {
+    right: 430px;
+}
+
+.lSSlideOuter .lSPager.lSGallery li {
+	opacity: .4;
+	transition: 1s;
+}
+.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
+	opacity: 1;
+	border-radius: 0;
+	transition: 1s;
+	&:hover {
+		border-radius: 0;
+		transition: 1s;
+	}
+}
+
+.lSAction > .lSNext {
+	height: 36px;
+    width: 36px;
+    background-color: #60ad3e;
+    margin-left: 12px;
+    background-image: url(../img/submit.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .7s;
+    opacity: 1;
+    &:hover {
+    	background-color: $orange;
+    }
+}
+
+.lSAction > .lSPrev {
+    height: 36px;
+    width: 36px;
+    background-color: rgb(96, 173, 62);
+    margin-left: 12px;
+    background-image: url(../img/submit.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.7s;	
+    transform: rotate(-180deg);
+    opacity: 1;
+    &:hover {
+    	background-color: $orange;
+    }
 }
