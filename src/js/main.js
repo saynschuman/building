@@ -1,5 +1,13 @@
 (function ($) {
 
+  // Chrome Smooth Scroll
+  try {
+      $.browserSelector();
+      if ($("html").hasClass("chrome")) {
+          $.smoothScroll();
+      }
+  } catch (err) {};
+
 	$('input#season').focus(function(){
 		$('.choose-season').show();
      }); // end blur()
@@ -363,6 +371,19 @@ $('#lightSlider').lightSlider({
     thumbItem: 9
 });
 
+  var w1 = $('#n-1').width();
+  $('#n-1').width(w1);
 
+  var w2 = $('#n-2').width();
+  $('#n-2').width(w2);
+
+  var w3 = $('#n-3').width();
+  $('#n-3').width(w3);
+
+  var w4 = $('#n-4').width();
+  $('#n-4').width(w4);
+
+  var w5 = $('#n-5').width();
+  $('#n-5').width(w5);
 
 }(jQuery));
