@@ -371,6 +371,14 @@ $('#lightSlider').lightSlider({
     thumbItem: 9
 });
 
+$('#lightSlider_2').lightSlider({
+    gallery: true,
+    item: 1,
+    loop: true,
+    slideMargin: 0,
+    thumbItem: 9
+});
+
   var w1 = $('#n-1').width();
   $('#n-1').width(w1);
 
@@ -385,5 +393,10 @@ $('#lightSlider').lightSlider({
 
   var w5 = $('#n-5').width();
   $('#n-5').width(w5);
+
+  // $('.n-1').animateNumber({ number: 1000 });
+
+
+  // form-2
 
 }(jQuery));
