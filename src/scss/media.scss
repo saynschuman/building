@@ -4,6 +4,9 @@
   .projects {
     width: 100%;
   }
+  .top-nav li::after {
+    display: none;
+  }
 }
 @media screen and (max-width: 1050px) {
 form.tabs ul.sizes li {

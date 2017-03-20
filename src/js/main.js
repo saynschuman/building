@@ -470,7 +470,9 @@ $('#lightSlider_2').lightSlider({
       slider.goToSlide(3);
     })
     
-    $('.carousel').carousel();
+    $('.carousel').carousel({
+      interval: false
+    });
 
     $(window).on('load resize', function(){
       var c_b_r = $('.container').offset().left;
