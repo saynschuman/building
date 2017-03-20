@@ -19,37 +19,40 @@
 <body>
     <!-- header -->
     <header class="header">
-        <div class="container cont-header">
-            <div class="top-header clearfix">
-                <div class="left-align left">
-                    <a href="#" class="logo"><img class="desktop" src="img/logo.png" alt=""><img class="mob" src="img/mobile-logo.png" alt=""></a>
-                      <button type="button" class="mobile-menu"><span></span> Меню</button>
-                      <nav class="top-nav">
+        <div class="header-fixed" data-scroll-header>
+            <div class="container">
+                <div class="top-header clearfix">
+                    <div class="left-align left">
+                        <a href="#" class="logo"><img class="desktop" src="img/logo.png" alt=""><img class="mob" src="img/mobile-logo.png" alt=""></a>
+                          <button type="button" class="mobile-menu"><span></span> Меню</button>
+                          <nav class="top-nav">
+                            <ul>
+                                <li><a data-scroll href="#anchor-1">Проекты</a></li>
+                                <li><a data-scroll href="#anchor-2">Расчет</a></li>
+                                <li><a data-scroll href="#anchor-3">Объекты</a></li>
+                                <li><a data-scroll href="#anchor-4">О нас</a></li>
+                                <li><a data-scroll href="#anchor-5">Этапы</a></li>
+                                <li><a data-scroll href="#anchor-6">Контакты</a></li>
+                            </ul>
+                          </nav>
+                    </div>
+                    <div class="right-align right">
                         <ul>
-                            <li><a data-scroll href="#choose-pr">Проекты</a></li>
-                            <li><a data-scroll href="#ch-count">Расчет</a></li>
-                            <li><a href="#">Услуги</a></li>
-                            <li><a href="#">Объекты</a></li>
-                            <li class="active"><a href="#">Преимущества</a></li>
-                            <li><a href="#">Отзывы</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="tel:8 (911) 009-69-93">8 (911) 009-69-93</a></li>
+                            <li><button>Заказать звонок</button></li>
+                            <li>Принимаем заявки по всему Северо-Западу</li>
                         </ul>
-                      </nav>
-                </div>
-                <div class="right-align right">
-                    <ul>
-                        <li><a href="tel:8 (911) 009-69-93">8 (911) 009-69-93</a></li>
-                        <li><button>Заказать звонок</button></li>
-                        <li>Принимаем заявки по всему Северо-Западу</li>
-                    </ul>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="container cont-header">
             <div class="middle-header">
                 <h1>Строительство каркасных домов «под ключ»</h1>
                 <div class="less-h">в СПб и Лен. области</div>
                 <div class="less-hh">с 50-летней гарантией <br> от 13 тыс. руб. за м²</div>
                 <div class="insurance">Страхование дома от пожара в подарок</div>
-                <a data-scroll href="#choose-pr" class="pick-up" data-value="Подобрать проект дома"></a>
+                <a data-scroll href="#anchor-1" class="pick-up" data-value="Подобрать проект дома"></a>
             </div>
         </div>
         <div class="mask"></div>

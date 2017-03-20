@@ -7,6 +7,11 @@
   .top-nav li::after {
     display: none;
   }
+  .header-fixed {
+    .container {
+      padding: 0;
+    }
+  }
 }
 @media screen and (max-width: 1050px) {
 form.tabs ul.sizes li {
@@ -368,6 +373,19 @@ header.header .top-header .left a.logo {
   }
 }
 @media screen and (max-width: 480px) {
+  .banner .title {
+    font-size: 32px;
+    line-height: 1.2;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .banner .block {
+    max-width: 250px;
+  }
+    .projects .proj .info .details {
+      font-size: 20px;
+      text-align: center;
+    }   
   .projects .proj .info {
     div:first-child {
       float: none;
@@ -392,9 +410,6 @@ header.header .top-header .left a.logo {
   }
   .demo_2 .want-wrapper {
     padding: 0;
-  }
-  header.header .top-header .right ul li:first-child a {
-    display: none;
   }
   header.header .middle-header .insurance {
     background-image: none;
@@ -436,3 +451,13 @@ header.header .top-header .left a.logo {
 //     padding-bottom: .5em;
 //   }
 // }
+
+ @media screen and (max-width: 488px)  {
+    header.header .top-header .right ul li:first-child a {
+          display: block;
+      position: absolute;
+      right: 69px;
+      font-size: 12px;
+      top: 22px;
+    } 
+  }

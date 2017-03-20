@@ -36,6 +36,19 @@ header.header {
 	height: 650px;
 	background-position: center;
 	position: relative;
+	.header-fixed {
+		position: fixed;	
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: transparent;
+		width: 100%;
+		z-index: 999; 
+		transition: .3s;
+	}
+	.bfff {
+  		background-color: #fff; 
+  		transition: .3s;
+	}
 	.mask {
 		display: none
 	}
@@ -126,7 +139,7 @@ header.header {
 		}
 	}
 	.middle-header {
-		padding: 36px 0;
+		padding: 136px 0 36px ;
 		color: #fff;
 		z-index: 2;
 		position: relative;
@@ -2547,4 +2560,9 @@ footer.footer {
 
 .no-b {
 	padding-bottom: 10px !important;
+}
+
+#anchor-1,
+#anchor-5 {
+  margin-top: 20px;
 }

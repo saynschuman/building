@@ -1,12 +1,12 @@
 (function ($) {
 
   // Chrome Smooth Scroll
-  try {
-      $.browserSelector();
-      if ($("html").hasClass("chrome")) {
-          $.smoothScroll();
-      }
-  } catch (err) {};
+  // try {
+  //     $.browserSelector();
+  //     if ($("html").hasClass("chrome")) {
+  //         $.smoothScroll();
+  //     }
+  // } catch (err) {};
 
 	$('input#season').focus(function(){
 		$('.choose-season').show();
@@ -424,7 +424,6 @@ $('#lightSlider_2').lightSlider({
         function init () { // функция - собиралка карты и фигни
             myMap = new ymaps.Map("map", { // создаем и присваиваем глобальной переменной карту и суем её в див с id="map"
                     center: [60.00808710199225,32.15604568721752], // ну тут центр 
-                    behaviors: ['default', 'scrollZoom'], // скроллинг колесом
                     zoom: 16 // тут масштаб
                 });
             // myMap.controls // добавим всяких кнопок, в скобках их позиции в блоке
@@ -479,18 +478,48 @@ $('#lightSlider_2').lightSlider({
     $('.contacts-block').css('right', c_b_r);
     })
 
-smoothScroll.init({
-    selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
-    selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
-    speed: 200, // Integer. How fast to complete the scroll in milliseconds
-    easing: 'easeInSine', // Easing pattern to use
-    offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
-    callback: function ( anchor, toggle ) {} // Function to run after scrolling
-});    
+// smoothScroll.init({
+//     selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+//     selectorHeader: '[data-scroll-header]', // Selector for fixed headers (must be a valid CSS selector) [optional]
+//     speed: 200, // Integer. How fast to complete the scroll in milliseconds
+//     easing: 'easeInSine', // Easing pattern to use
+    
+//     callback: function ( anchor, toggle ) {} // Function to run after scrolling
+// });    
+
+
+$('header a[href^="#"]').on('click',function(e) {    
+  e.preventDefault();
+  var target = this.hash;
+  var topHeader = $('.top-header').height();
+  $target = $(target);    
+  $('html, body').stop().animate({        
+    'scrollTop':  $target.offset().top -topHeader
+  }, 900, 'swing', function () {        
+    window.location.hash = target;    
+  });  
+});
 
   //  mobile button menu
   $('.mobile-menu').click(function() {
     $(this).toggleClass('active');
   });
+  $('.mobile-menu + .top-nav li a').click(function() {
+    $('.mobile-menu').toggleClass('active');
+  });
+
+    //scroll header
+
+    $(window).scroll(function(){
+      var innewWidth = $(this).width();
+      if(innewWidth > 1200) {
+        if ( $(this).scrollTop() > 40) {
+          $('.header-fixed').addClass('bfff');
+        } else if($(this).scrollTop() <= 40) {
+          $('.header-fixed').removeClass('bfff');
+        }
+      }
+    });
+
 
 }(jQuery));
