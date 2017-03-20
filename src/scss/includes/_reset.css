@@ -46,7 +46,7 @@ table {
   }
 }
 
-header::-webkit-scrollbar,
+/*header::-webkit-scrollbar,
 body::-webkit-scrollbar { 
   width: 0; 
 }
@@ -54,7 +54,7 @@ body::-webkit-scrollbar {
 header,
 body { 
   -ms-overflow-style: none; 
-}
+}*/
  
 input:focus, 
 button:focus {

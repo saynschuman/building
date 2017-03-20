@@ -19,18 +19,18 @@
 <body>
     <!-- header -->
     <header class="header">
-        <div class="container">
+        <div class="container cont-header">
             <div class="top-header clearfix">
                 <div class="left-align left">
-                    <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+                    <a href="#" class="logo"><img class="desktop" src="img/logo.png" alt=""><img class="mob" src="img/mobile-logo.png" alt=""></a>
                       <button type="button" class="mobile-menu"><span></span> Меню</button>
                       <nav class="top-nav">
                         <ul>
-                            <li><a href="#">Проекты</a></li>
-                            <li><a href="#">Расчет</a></li>
+                            <li><a data-scroll href="#choose-pr">Проекты</a></li>
+                            <li><a data-scroll href="#ch-count">Расчет</a></li>
                             <li><a href="#">Услуги</a></li>
                             <li><a href="#">Объекты</a></li>
-                            <li><a href="#">Преимущества</a></li>
+                            <li class="active"><a href="#">Преимущества</a></li>
                             <li><a href="#">Отзывы</a></li>
                             <li><a href="#">Контакты</a></li>
                         </ul>
@@ -49,9 +49,10 @@
                 <div class="less-h">в СПб и Лен. области</div>
                 <div class="less-hh">с 50-летней гарантией <br> от 13 тыс. руб. за м²</div>
                 <div class="insurance">Страхование дома от пожара в подарок</div>
-                <button class="pick-up" data-value="Подобрать проект дома"></button>
+                <a data-scroll href="#choose-pr" class="pick-up" data-value="Подобрать проект дома"></a>
             </div>
         </div>
+        <div class="mask"></div>
     </header>
 
 <main>
@@ -159,14 +160,14 @@
 		    </div>
 		</div>
 	</div>
-	<div class="container projects">
+	<div class="container projects" id="choose-pr">
 		<h2>Проекты каркасных домов</h2>
 
 		<div id="carousel-projects" class="carousel slide" data-ride="carousel-projects">
 		    <!-- Carousel items -->
 		    <div class="carousel-inner">
 				<div class="item active">
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="proj">
 							<ul class="title">
 								<li>01</li>
@@ -190,7 +191,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="proj">
 							<ul class="title">
 								<li>02</li>
@@ -214,7 +215,7 @@
 							</div>
 						</div>
 					</div>		
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="proj">
 							<ul class="title">
 								<li>03</li>
@@ -238,7 +239,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="proj">
 							<ul class="title">
 								<li>04</li>
@@ -262,7 +263,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="proj">
 							<ul class="title">
 								<li>05</li>
@@ -286,7 +287,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="proj">
 							<ul class="title">
 								<li>06</li>
@@ -312,7 +313,7 @@
 					</div>			    	
 				</div>
 			    <div class="item">
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="proj">
 							<ul class="title">
 								<li>01</li>
@@ -336,7 +337,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="proj">
 							<ul class="title">
 								<li>02</li>
@@ -360,7 +361,7 @@
 							</div>
 						</div>
 					</div>		
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="proj">
 							<ul class="title">
 								<li>03</li>
@@ -384,7 +385,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="proj">
 							<ul class="title">
 								<li>04</li>
@@ -408,7 +409,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="proj">
 							<ul class="title">
 								<li>05</li>
@@ -432,7 +433,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="proj">
 							<ul class="title">
 								<li>06</li>
@@ -458,7 +459,7 @@
 					</div>			    	
 			    </div>
 			    <div class="item">
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="proj">
 							<ul class="title">
 								<li>01</li>
@@ -482,7 +483,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="proj">
 							<ul class="title">
 								<li>02</li>
@@ -506,7 +507,7 @@
 							</div>
 						</div>
 					</div>		
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="proj">
 							<ul class="title">
 								<li>03</li>
@@ -530,7 +531,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="proj">
 							<ul class="title">
 								<li>04</li>
@@ -554,7 +555,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="proj">
 							<ul class="title">
 								<li>05</li>
@@ -578,7 +579,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="proj">
 							<ul class="title">
 								<li>06</li>
@@ -626,7 +627,7 @@
 		<h5>Проекты каркасных домов</h5>
 		<p>Сегодня загородное строительство получило очень широкое распространение. Многочисленные коттеджные поселки воплощают естественное желание людей быть ближе к природе. Однако строительство коттеджей — это еще и прекрасный повод выразить себя, утвердить свой стиль жизни. Эскизные и архитектурные проекты коттеджей от «Дома Строй Комфорт» — великолепная возможность сделать это. Ведь, по вашему желанию, мы готовы БЕСПЛАТНО предоставить вам любой понравившийся проект из нашей обширной базы или выполнить индивидуальный проект коттеджа, где будут учтены все ваши пожелания.</p>
 	</div>
-	<div class="count-head-wrapper">
+	<div class="count-head-wrapper" id="ch-count">
 		<div class="container">
 			<div class="title">Рассчитайте стоимость вашего будущего дома</div>
 			<div class="sub-title">Заполните указанные ниже параметры и узнайте приблизительную стоимость в 1 клик</div>
@@ -1191,9 +1192,9 @@
 
 <footer class="footer clearfix">
   <div class="container">
-  	<div class="col-md-3 bottom-foot"><img src="img/logo-4.png" alt=""></div>
-  	<div class="col-md-4 bottom-foot"><img src="img/logo-3.png" alt=""></div>
-  	<div class="col-md-5 bottom-foot">
+  	<div class="col-md-3 col-sm-6 col-xs-12 col-sm-12 bottom-foot"><img src="img/logo-4.png" alt=""></div>
+  	<div class="col-md-4 col-sm-6 col-xs-12 col-sm-12 bottom-foot"><img src="img/logo-3.png" alt=""></div>
+  	<div class="col-md-5 col-sm-12 col-xs-12 bottom-foot">
         <ul class="footer-call">
             <li><a href="tel:8 (911) 009-69-93">8 (911) 009-69-93</a></li>
             <li><button>Заказать звонок</button></li>
@@ -1213,6 +1214,7 @@
 <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
 <script src="libs/js/bootstrap-carousel.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="libs/js/smooth.js"></script>
 <script src="js/main.js"></script>
 
 </body>

@@ -477,4 +477,18 @@ $('#lightSlider_2').lightSlider({
     $('.contacts-block').css('right', c_b_r);
     })
 
+smoothScroll.init({
+    selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+    selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+    speed: 200, // Integer. How fast to complete the scroll in milliseconds
+    easing: 'easeInSine', // Easing pattern to use
+    offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+    callback: function ( anchor, toggle ) {} // Function to run after scrolling
+});    
+
+  //  mobile button menu
+  $('.mobile-menu').click(function() {
+    $(this).toggleClass('active');
+  });
+
 }(jQuery));

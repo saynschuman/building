@@ -42,14 +42,15 @@ table {
   content: "";
   clear: both; }
 
-header::-webkit-scrollbar,
-body::-webkit-scrollbar {
-  width: 0; }
+/*header::-webkit-scrollbar,
+body::-webkit-scrollbar { 
+  width: 0; 
+}
 
 header,
-body {
-  -ms-overflow-style: none; }
-
+body { 
+  -ms-overflow-style: none; 
+}*/
 input:focus,
 button:focus {
   outline: none; }
@@ -206,77 +207,85 @@ header.header {
   background-image: url(../img/header.jpg);
   width: 100%;
   height: 650px;
-  background-position: center; }
-  header.header .top-header .left a.logo {
-    width: 383px;
-    height: 55px;
-    margin-top: 8px;
-    margin-bottom: 9px;
-    display: block; }
-  header.header .top-header .right ul {
-    margin-top: 20px; }
-    header.header .top-header .right ul li {
-      display: inline-block; }
-      header.header .top-header .right ul li:first-child a {
-        color: #393939;
-        font-size: 30px;
-        font-family: Roboto-Bold;
-        position: relative; }
-        header.header .top-header .right ul li:first-child a:hover::before {
-          -webkit-transform: rotate(-360deg);
-              -ms-transform: rotate(-360deg);
-                  transform: rotate(-360deg);
-          -webkit-transition: .3s;
-          transition: .3s; }
-        header.header .top-header .right ul li:first-child a:hover::after {
-          width: 60%;
-          -webkit-transition: .3s;
-          transition: .3s; }
-        header.header .top-header .right ul li:first-child a::before {
-          content: '';
-          position: absolute;
-          height: 22px;
-          width: 20px;
-          top: 10px;
-          left: -27px;
-          background-image: url(../img/phone.png);
-          -webkit-transition: .3s;
-          transition: .3s; }
-        header.header .top-header .right ul li:first-child a::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          right: 0;
-          width: 0;
-          height: 1px;
-          background-color: #393939;
-          -webkit-transition: .3s;
-          transition: .3s; }
-      header.header .top-header .right ul li:nth-child(2) {
-        margin-left: 7px;
-        vertical-align: top;
-        padding-top: 4px; }
-        header.header .top-header .right ul li:nth-child(2) button {
-          color: #fff;
-          background-color: #ff7800;
-          font-size: 14px;
-          width: 133px;
-          height: 33px;
-          border: none;
-          -webkit-border-radius: 3px;
-                  border-radius: 3px;
-          -webkit-transition: .3s;
-          transition: .3s;
-          border: 1px solid #ff7800; }
-          header.header .top-header .right ul li:nth-child(2) button:hover {
-            background-color: #fff;
-            color: #ff7800; }
-      header.header .top-header .right ul li:last-child {
-        display: block;
-        margin-top: 3px; }
+  background-position: center;
+  position: relative; }
+  header.header .mask {
+    display: none; }
+  header.header .top-header {
+    z-index: 2;
+    position: relative; }
+    header.header .top-header .left a.logo {
+      width: 383px;
+      height: 55px;
+      margin-top: 8px;
+      margin-bottom: 9px;
+      display: block; }
+    header.header .top-header .right ul {
+      margin-top: 20px; }
+      header.header .top-header .right ul li {
+        display: inline-block; }
+        header.header .top-header .right ul li:first-child a {
+          color: #393939;
+          font-size: 30px;
+          font-family: Roboto-Bold;
+          position: relative; }
+          header.header .top-header .right ul li:first-child a:hover::before {
+            -webkit-transform: rotate(-360deg);
+                -ms-transform: rotate(-360deg);
+                    transform: rotate(-360deg);
+            -webkit-transition: .3s;
+            transition: .3s; }
+          header.header .top-header .right ul li:first-child a:hover::after {
+            width: 60%;
+            -webkit-transition: .3s;
+            transition: .3s; }
+          header.header .top-header .right ul li:first-child a::before {
+            content: '';
+            position: absolute;
+            height: 22px;
+            width: 20px;
+            top: 10px;
+            left: -27px;
+            background-image: url(../img/phone.png);
+            -webkit-transition: .3s;
+            transition: .3s; }
+          header.header .top-header .right ul li:first-child a::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 1px;
+            background-color: #393939;
+            -webkit-transition: .3s;
+            transition: .3s; }
+        header.header .top-header .right ul li:nth-child(2) {
+          margin-left: 7px;
+          vertical-align: top;
+          padding-top: 4px; }
+          header.header .top-header .right ul li:nth-child(2) button {
+            color: #fff;
+            background-color: #ff7800;
+            font-size: 14px;
+            width: 133px;
+            height: 33px;
+            border: none;
+            -webkit-border-radius: 3px;
+                    border-radius: 3px;
+            -webkit-transition: .3s;
+            transition: .3s;
+            border: 1px solid #ff7800; }
+            header.header .top-header .right ul li:nth-child(2) button:hover {
+              background-color: #fff;
+              color: #ff7800; }
+        header.header .top-header .right ul li:last-child {
+          display: block;
+          margin-top: 3px; }
   header.header .middle-header {
     padding: 36px 0;
-    color: #fff; }
+    color: #fff;
+    z-index: 2;
+    position: relative; }
     header.header .middle-header .less-h {
       font-size: 30px;
       font-family: Roboto-Bold; }
@@ -294,7 +303,7 @@ header.header {
       padding: 24px 0 0 73px;
       line-height: 1.2;
       background-repeat: no-repeat; }
-    header.header .middle-header button.pick-up {
+    header.header .middle-header a.pick-up {
       font-size: 18px;
       background-color: #ff7800;
       font-family: Roboto-Bold;
@@ -304,8 +313,12 @@ header.header {
       -webkit-border-radius: 4px;
               border-radius: 4px;
       margin-top: 20px;
-      position: relative; }
-      header.header .middle-header button.pick-up::after {
+      position: relative;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding-top: 17px; }
+      header.header .middle-header a.pick-up::after {
         content: '';
         position: absolute;
         left: 0;
@@ -323,11 +336,11 @@ header.header {
         transition: 1s;
         z-index: 0;
         opacity: 0; }
-      header.header .middle-header button.pick-up::before {
+      header.header .middle-header a.pick-up::before {
         content: attr(data-value);
         z-index: 1;
         position: relative; }
-      header.header .middle-header button.pick-up:hover::after {
+      header.header .middle-header a.pick-up:hover::after {
         height: 100%;
         width: 100%;
         -webkit-transition: .5s;
@@ -434,8 +447,10 @@ header.header {
           transform: translateY(-50%);
   left: 0;
   right: 0;
-  height: 3px;
-  background: #60ad3e; }
+  height: 4.5px;
+  margin: auto;
+  width: 30px;
+  background: #fff; }
 
 .mobile-menu span:before,
 .mobile-menu span:after {
@@ -443,15 +458,15 @@ header.header {
   display: block;
   left: 0;
   width: 100%;
-  height: 3px;
-  background: #60ad3e;
+  height: 4.5px;
+  background: #fff;
   content: ''; }
 
 .mobile-menu span::before {
-  top: -8px; }
+  top: -10px; }
 
 .mobile-menu span::after {
-  bottom: -8px; }
+  bottom: -10px; }
 
 .mobile-menu.active span {
   background: transparent; }
@@ -1098,7 +1113,13 @@ form.tabs #send-form {
     padding: 10px 20px;
     -webkit-border-radius: 4px;
             border-radius: 4px;
-    margin-top: 50px; }
+    margin-top: 50px;
+    -webkit-transition: 1s;
+    transition: 1s; }
+    .banner .block:hover {
+      background-color: #2DB54F;
+      -webkit-transition: 1s;
+      transition: 1s; }
 
 .text {
   padding-top: 50px;

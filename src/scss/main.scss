@@ -35,7 +35,13 @@ header.header {
 	width: 100%;
 	height: 650px;
 	background-position: center;
+	position: relative;
+	.mask {
+		display: none
+	}
 	.top-header {
+		z-index: 2;
+		position: relative;
 		.left {
 			a.logo {
 				width: 383px;
@@ -122,6 +128,8 @@ header.header {
 	.middle-header {
 		padding: 36px 0;
 		color: #fff;
+		z-index: 2;
+		position: relative;
 		.less-h {
 			font-size: 30px;
 			font-family: Roboto-Bold;
@@ -142,7 +150,7 @@ header.header {
 		    line-height: 1.2;
 		    background-repeat: no-repeat;
 		}
-		button.pick-up {
+		a.pick-up {
 			font-size: 18px;
 			background-color: $orange;
 			font-family: Roboto-Bold;
@@ -152,6 +160,10 @@ header.header {
 			border-radius: 4px;
 			margin-top: 20px;
 			position: relative;
+			display: block;
+			color: #fff;
+			text-align: center;
+			padding-top: 17px;
 			&::after {
 				content: '';
 				position: absolute;
@@ -291,8 +303,10 @@ header.header {
   transform: translateY(-50%);
   left: 0;
   right: 0;
-  height: 3px;
-  background: $green; }
+  height: 4.5px;
+  margin: auto;
+  width: 30px;
+  background: #fff; }
 
 .mobile-menu span:before,
 .mobile-menu span:after {
@@ -300,15 +314,15 @@ header.header {
   display: block;
   left: 0;
   width: 100%;
-  height: 3px;
-  background: $green;
+  height: 4.5px;
+  background: #fff;
   content: ''; }
 
 .mobile-menu span::before {
-  top: -8px; }
+  top: -10px; }
 
 .mobile-menu span::after {
-  bottom: -8px; }
+  bottom: -10px; }
 
 .mobile-menu.active span {
   background: transparent; }
@@ -1036,6 +1050,11 @@ form.tabs {
 		padding: 10px 20px;
 		border-radius: 4px;
 		margin-top: 50px;
+		transition: 1s;
+		&:hover {
+			background-color: #2DB54F; 
+			transition: 1s;
+		}
 	}
 }
 
