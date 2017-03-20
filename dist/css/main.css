@@ -621,6 +621,12 @@ header.header {
 .form-count-wrapper {
   background-color: #f5f5f5;
   padding-bottom: 50px; }
+  .form-count-wrapper h3 {
+    font-size: 36px;
+    font-family: Roboto-Bold;
+    padding: 40px 0;
+    text-align: center;
+    line-height: 1.2; }
 
 form.tabs h4 {
   display: block;
@@ -932,6 +938,12 @@ form.tabs #send-form {
 
 .projects {
   width: 1090px; }
+  .projects h3 {
+    font-size: 36px;
+    font-family: Roboto-Bold;
+    padding: 40px 0;
+    text-align: center;
+    line-height: 1.2; }
   .projects .proj {
     max-width: 300px;
     display: block;
@@ -1139,7 +1151,7 @@ form.tabs #send-form {
 .text {
   padding-top: 50px;
   padding-bottom: 50px; }
-  .text h5 {
+  .text h4 {
     font-size: 24px;
     font-family: Roboto-Bold;
     margin-bottom: 20px; }
@@ -1153,6 +1165,11 @@ form.tabs #send-form {
   padding: 26.5px 0;
   color: #fff; }
   .count-head-wrapper .title {
+    font-size: 40px;
+    font-family: Roboto-Bold;
+    max-width: 460px;
+    line-height: 1.2; }
+  .count-head-wrapper h3 {
     font-size: 40px;
     font-family: Roboto-Bold;
     max-width: 460px;
@@ -1321,6 +1338,12 @@ form.tabs #send-form {
 
 .realized-projects {
   padding-bottom: 100px; }
+  .realized-projects .tit {
+    font-size: 36px;
+    font-family: Roboto-Bold;
+    padding: 40px 0 0;
+    text-align: center;
+    line-height: 1.2; }
   .realized-projects .carousel-indicators {
     bottom: -75px;
     left: 0px;
@@ -1377,6 +1400,12 @@ form.tabs #send-form {
     background-position: center; }
   .realized-projects h2 {
     padding-bottom: 10px; }
+  .realized-projects h3 {
+    font-size: 36px;
+    font-family: Roboto-Bold;
+    padding: 40px 0;
+    text-align: center;
+    line-height: 1.2; }
   .realized-projects .sub-t {
     font-size: 30px;
     color: #2DB54F;
@@ -1535,6 +1564,12 @@ form.tabs #send-form {
   background-attachment: fixed;
   background-size: cover;
   background-position: center; }
+  .in-numbers-wrapper .tit {
+    font-size: 36px;
+    font-family: Roboto-Bold;
+    padding: 40px 0;
+    text-align: center;
+    line-height: 1.2; }
   .in-numbers-wrapper .im-numbers .num-block {
     margin-bottom: 80px;
     padding: 0; }
@@ -2144,6 +2179,12 @@ label span {
   background-image: none; }
   .steps h2 {
     margin-bottom: 20px; }
+  .steps .tit {
+    font-size: 36px;
+    font-family: Roboto-Bold;
+    padding: 40px 0;
+    text-align: center;
+    line-height: 1.2; }
   .steps .im-numbers img {
     height: 120px;
     width: auto; }
@@ -2445,3 +2486,306 @@ footer.footer {
 #anchor-1,
 #anchor-5 {
   margin-top: 20px; }
+
+.popup {
+  position: fixed;
+  top: 100px;
+  left: 50px;
+  right: 50px;
+  margin: auto;
+  background-color: #f5f5f5;
+  text-align: center;
+  z-index: 99999;
+  display: none; }
+  .popup.small {
+    width: 100%;
+    max-width: 400px;
+    padding: 50px 10px;
+    height: auto; }
+  .popup.medium {
+    max-width: 580px;
+    width: 100%;
+    padding: 50px 10px;
+    height: auto; }
+    .popup.medium input {
+      display: inline-block;
+      margin-left: 7px;
+      margin-right: 7px; }
+  .popup.huge {
+    max-width: 900px;
+    padding: 0 50px; }
+    .popup.huge .h-p {
+      margin-top: 100px;
+      z-index: 999;
+      background-color: #f5f5f5; }
+    .popup.huge .left {
+      width: -webkit-calc(100% - 300px);
+      width: calc(100% - 300px); }
+    .popup.huge .right {
+      width: 280px;
+      text-align: left;
+      padding-top: 15px; }
+      .popup.huge .right .reh {
+        font-size: 16px;
+        color: #393939; }
+      .popup.huge .right .value {
+        font-family: Roboto-Bold;
+        font-size: 36px;
+        color: #60ad3e; }
+        .popup.huge .right .value span {
+          font-size: 24px; }
+      .popup.huge .right .look {
+        color: #ff7800;
+        font-family: Roboto-Bold; }
+      .popup.huge .right .titl {
+        font-size: 24px;
+        color: #60ad3e;
+        font-family: Roboto-Bold;
+        line-height: 1;
+        border-bottom: 2px solid #60ad3e;
+        margin-top: 20px; }
+      .popup.huge .right .inp-block {
+        position: relative; }
+        .popup.huge .right .inp-block i {
+          z-index: 2;
+          position: absolute;
+          color: #2DB54F;
+          margin-left: 192px;
+          top: 12px; }
+        .popup.huge .right .inp-block ul {
+          display: none;
+          position: absolute;
+          z-index: 999; }
+          .popup.huge .right .inp-block ul li {
+            border: 1px solid #2DB54F;
+            height: 40px;
+            width: 215px;
+            padding-top: 7px;
+            -webkit-border-radius: 3px;
+                    border-radius: 3px;
+            padding-left: 13px;
+            padding-right: 11px;
+            position: relative;
+            cursor: pointer;
+            background-color: #fff;
+            color: #979797; }
+        .popup.huge .right .inp-block label {
+          display: none; }
+    .popup.huge .tit {
+      font-size: 36px;
+      font-family: Roboto-Bold;
+      padding: 40px 0 0;
+      text-align: center;
+      line-height: 1.2; }
+    .popup.huge .carousel-indicators {
+      bottom: -75px;
+      left: 0px;
+      z-index: 15;
+      width: 100%;
+      margin-left: 0;
+      padding-left: 0;
+      list-style: none;
+      text-align: left; }
+      .popup.huge .carousel-indicators li {
+        outline: 5px solid transparent;
+        outline-offset: -5px;
+        margin: 0;
+        width: 114px;
+        height: 64px;
+        background-color: transparent;
+        border: none;
+        opacity: .4; }
+        .popup.huge .carousel-indicators li img {
+          width: 100%;
+          height: 100%; }
+        .popup.huge .carousel-indicators li.active {
+          width: 114px;
+          height: 64px;
+          outline: 5px solid #2DB54F;
+          outline-offset: -5px;
+          background-color: transparent;
+          opacity: 1; }
+          .popup.huge .carousel-indicators li.active img {
+            width: 100%;
+            height: 100%; }
+    .popup.huge .carousel-control.left {
+      background: none;
+      opacity: 1;
+      height: 36px;
+      width: 36px;
+      background-color: #60ad3e;
+      background-image: url(../img/submit.png);
+      background-repeat: no-repeat;
+      left: 11px;
+      background-position: center;
+      -webkit-transform: translateY(-50%) rotate(-180deg);
+          -ms-transform: translateY(-50%) rotate(-180deg);
+              transform: translateY(-50%) rotate(-180deg); }
+    .popup.huge .carousel-control.right {
+      right: 11px;
+      background: none;
+      opacity: 1;
+      height: 36px;
+      width: 36px;
+      background-color: #60ad3e;
+      background-image: url(../img/submit.png);
+      background-repeat: no-repeat;
+      background-position: center; }
+    .popup.huge h2 {
+      padding-bottom: 10px; }
+    .popup.huge h3 {
+      font-size: 36px;
+      font-family: Roboto-Bold;
+      padding: 40px 0;
+      text-align: center;
+      line-height: 1.2; }
+    .popup.huge .sub-t {
+      font-size: 30px;
+      color: #2DB54F;
+      font-family: Roboto-Bold;
+      text-align: center;
+      padding-bottom: 20px; }
+    .popup.huge .left-c {
+      width: 100%; }
+      .popup.huge .left-c .img-wr {
+        overflow: hidden;
+        height: 400px; }
+        .popup.huge .left-c .img-wr img {
+          height: 400px; }
+    .popup.huge .right-c {
+      background-color: transparent;
+      width: 300px;
+      padding: 26px 28px; }
+      .popup.huge .right-c .title {
+        font-size: 30px;
+        color: #fff;
+        font-family: Roboto-Bold; }
+      .popup.huge .right-c .sub-title {
+        font-size: 18px;
+        font-family: Roboto-Bold;
+        color: #fff;
+        margin-top: 20px; }
+      .popup.huge .right-c p {
+        font-size: 16px;
+        line-height: 1.5; }
+      .popup.huge .right-c b {
+        font-family: Roboto-Bold; }
+  .popup .title {
+    font-size: 30px;
+    font-family: Roboto-Bold;
+    line-height: 1.2; }
+  .popup p {
+    font-size: 16px;
+    margin-top: 5px; }
+  .popup .close {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    position: absolute;
+    right: -16px;
+    top: -16px;
+    cursor: pointer;
+    -webkit-transition: .7s;
+    transition: .7s;
+    opacity: 1;
+    background-image: none;
+    background-color: #60ad3e; }
+    .popup .close:hover {
+      opacity: 1;
+      -webkit-transition: .7s;
+      transition: .7s;
+      background-color: #ff7800; }
+    .popup .close::before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 70%;
+      background-color: #fff;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+      top: 17px;
+      left: 5px; }
+    .popup .close::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 70%;
+      background-color: #fff;
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      top: 17px;
+      left: 5px; }
+  .popup form {
+    margin-top: 30px; }
+    .popup form input {
+      display: block;
+      border: 1px solid #2DB54F;
+      height: 40px;
+      width: 215px;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      padding-left: 13px;
+      padding-right: 11px;
+      position: relative;
+      margin: auto;
+      margin-bottom: 14px; }
+    .popup form button {
+      font-size: 16px;
+      background-color: #ff7800;
+      font-family: Roboto-Bold;
+      border: none;
+      height: 40px;
+      width: 215px;
+      -webkit-border-radius: 4px;
+              border-radius: 4px;
+      position: relative;
+      color: #fff; }
+      .popup form button::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        width: 0;
+        height: 0;
+        background-color: #20AB46;
+        -webkit-border-radius: 100%;
+                border-radius: 100%;
+        background-size: 100%;
+        -webkit-transition: 1s;
+        transition: 1s;
+        z-index: 0;
+        opacity: 0; }
+      .popup form button::before {
+        content: attr(data-value);
+        z-index: 1;
+        position: relative; }
+      .popup form button:hover::after {
+        height: 100%;
+        width: 100%;
+        -webkit-transition: .5s;
+        transition: .5s;
+        opacity: 1;
+        -webkit-border-radius: 4px;
+                border-radius: 4px;
+        border: 1px solid #fff; }
+
+.mask-dark {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: #292929; }
+
+.db {
+  display: block; }
+
+.tablet {
+  display: none; }

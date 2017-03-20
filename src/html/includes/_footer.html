@@ -8,11 +8,171 @@
   	<div class="col-md-5 col-sm-12 col-xs-12 bottom-foot">
         <ul class="footer-call">
             <li><a href="tel:8 (911) 009-69-93">8 (911) 009-69-93</a></li>
-            <li><button>Заказать звонок</button></li>
+            <li><button class="call-me-open">Заказать звонок</button></li>
         </ul>  		
   	</div>
   </div>
 </footer>
+
+<!-- popups -->
+
+<div class="popup small call-me">
+	<div class="title">Заказ звонка</div>
+	<p>Мы перезвоним вам в течении 15 минут!</p>
+	<form id="individual-project" action="">
+		<input required type="text" placeholder="Имя">
+		<input required id="form-tel" type="tel" placeholder="Телефон">
+		<button type="submit" data-value="Оставить заявку"></button>
+	</form>
+	<div class="close"></div>
+</div>
+
+<!-- <div class="popup small">
+	<div class="title">Заявка на <br> индивидуальный <br> проект
+</div>
+	<form id="call-me" action="">
+		<input required type="text" placeholder="Имя">
+		<input required id="form-tel" type="tel" placeholder="Телефон">
+		<button type="submit" data-value="Оставить заявку"></button>
+	</form>
+	<div class="close"></div>
+</div> -->
+
+<div class="popup medium ind-pop">
+	<div class="title">Заявка на индивидуальный проект</div>
+	<form id="call-me-bigger" action="">
+		<input required type="text" placeholder="Имя">
+		<input required id="form-tel" type="tel" placeholder="Телефон">
+		<button type="submit" data-value="Оставить заявку"></button>
+	</form>
+	<div class="close"></div>
+</div>
+
+<div class="popup huge clearfix">
+	<div class="left left-align">
+		<div class="demo demo_2">
+			<div id="carousel-popup" class="carousel slide carousel-fade" data-ride="carousel-popup">
+			    <ol class="carousel-indicators">
+			        <li data-target="#carousel-popup" data-slide-to="0" class="active"><img src="img/slider.jpg" /></li>
+			        <li data-target="#carousel-popup" data-slide-to="1"><img src="img/slider.jpg" /></li>
+			        <li data-target="#carousel-popup" data-slide-to="2"><img src="img/slider.jpg" /></li>
+			        <li data-target="#carousel-popup" data-slide-to="3"><img src="img/slider.jpg" /></li>
+			    </ol>
+			    <!-- Carousel items -->
+			    <div class="carousel-inner">
+					<div class="item active">
+				    	<div class="left-c left-align"><div class="img-wr"><img src="img/slider.jpg" /></div></div>
+				    </div>
+				    <div class="item">
+				    	<div class="left-c left-align"><div class="img-wr"><img src="img/slider.jpg" /></div></div>
+				    </div>
+				    <div class="item">
+				    	<div class="left-c left-align"><div class="img-wr"><img src="img/slider.jpg" /></div></div>
+				    </div>
+				    <div class="item">
+				    	<div class="left-c left-align"><div class="img-wr"><img src="img/slider.jpg" /></div></div>
+				    </div>
+			    </div>
+			    <!-- Carousel nav -->
+			    <a class="carousel-control left" href="#carousel-popup" data-slide="prev"></a>
+			    <a class="carousel-control right" href="#carousel-popup" data-slide="next"></a>
+			</div>
+		</div>
+	</div>
+	<div class="right right-align">
+		<div class="title">Проект “Тулон”</div>
+		<p><b>Площадь дома:</b>  104 м²</p>
+		<p class="look">Посмотреть базовую комплектацию</p>
+		<div class="titl">Выберите свою комплектацию</div>
+			<form class="left left-align clearfix">
+				<div class="f-l">
+					<div class="inp-block">
+						<label for="ch-foundation">Фундамент</label>
+						<input id="ch-foundation" type="text" placeholder="Нет" readonly="true">
+	          			<i class="fa fa-caret-down" aria-hidden="true"></i>
+	          			<ul>
+	          				<li class="txt">Ленточный</li>
+	          				<li class="txt">Монолитный</li>
+	          				<li class="txt">Свайный</li>	          			
+	          			</ul>						
+					</div>
+					<div class="inp-block">
+						<label for="ch-brick">Наружная отделка</label>
+						<input id="ch-brick" type="text" placeholder="Имитация бруса" readonly="true">
+						<i class="fa fa-caret-down" aria-hidden="true"></i>
+	          			<ul>
+	          				<li class="txt">Ленточный</li>
+	          				<li class="txt">Монолитный</li>
+	          				<li class="txt">Свайный</li>	          			
+	          			</ul>												
+					</div>
+					<div class="inp-block">
+						<label for="ch-roof">Кровля</label>
+						<input id="ch-roof" type="text" placeholder="Ондулин" readonly="true">
+						<i class="fa fa-caret-down" aria-hidden="true"></i>
+	          			<ul>
+	          				<li class="txt">Ленточный</li>
+	          				<li class="txt">Монолитный</li>
+	          				<li class="txt">Свайный</li>	          			
+	          			</ul>												
+					</div>
+				</div>
+				<div class="f-r">
+					<div class="inp-block">
+						<label for="ch-season">Сезонность</label>
+						<input id="ch-season" type="text" placeholder="Летний" readonly="true">
+						<i class="fa fa-caret-down" aria-hidden="true"></i>
+	          			<ul>
+	          				<li class="txt">Ленточный</li>
+	          				<li class="txt">Монолитный</li>
+	          				<li class="txt">Свайный</li>	          			
+	          			</ul>												
+					</div>
+					<div class="inp-block">
+						<label for="ch-brush">Внутренняя отделка</label>
+						<input id="ch-brush" type="text" placeholder="Вагонка/гипсокартон" readonly="true">
+						<i class="fa fa-caret-down" aria-hidden="true"></i>
+	          			<ul>
+	          				<li class="txt">Ленточный</li>
+	          				<li class="txt">Монолитный</li>
+	          				<li class="txt">Свайный</li>	          			
+	          			</ul>												
+					</div>
+					<div class="inp-block">
+						<label for="ch-windows">Окна</label>
+						<input id="ch-windows" type="text" placeholder="Металлопластиковые" readonly="true">
+						<i class="fa fa-caret-down" aria-hidden="true"></i>
+	          			<ul>
+	          				<li class="txt">Ленточный</li>
+	          				<li class="txt">Монолитный</li>
+	          				<li class="txt">Свайный</li>	          			
+	          			</ul>												
+					</div>
+				</div>
+				<div class="cost">
+					<div class="reh">Приблизительная стоимость:</div>
+					<div class="value">1448000 <span>рублей</span></div>
+				</div>				
+			</form>		
+	</div>
+	<form class="h-p" id="" action="">
+		<input required type="text" placeholder="Имя">
+		<input required id="form-tel" type="tel" placeholder="Телефон">
+		<button type="submit" data-value="Оставить заявку"></button>
+	</form>
+	<div class="close"></div>
+</div>
+
+<!-- <div class="popup medium">
+	<div class="title">Заявка на индивидуальный проект</div>
+	<p>Мы перезвоним вам в течении 15 минут!</p>
+	<form id="call-me-bigger-2" action="">
+		<input required type="text" placeholder="Имя">
+		<input required id="form-tel" type="tel" placeholder="Телефон">
+		<button type="submit" data-value="Оставить заявку"></button>
+	</form>
+	<div class="close"></div>
+</div> -->
 
 <script src="libs/js/jquery.min.js"></script>
 <script src="libs/js/input-mask.js"></script>
@@ -21,7 +181,6 @@
 <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
 <script src="libs/js/bootstrap-carousel.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-
 <script src="js/main.js"></script>
 
 </body>

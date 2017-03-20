@@ -522,4 +522,26 @@ $('header a[href^="#"]').on('click',function(e) {
     });
 
 
+$('.call-me-open').click(function(){
+  $('.call-me').show();
+  $('.mask-dark').show();
+})
+
+$('.ind-pop-open').click(function(e){
+  e.preventDefault();
+  $('.ind-pop').show();
+  $('.mask-dark').show();
+})
+
+$('.close').click(function(){
+  $('body').addClass('no-scroll');
+  $('.mask-dark').hide();
+  $('.popup').hide();
+})
+
+$('.mask-dark').click(function(){
+  $(this).hide();
+  $('.popup').hide();
+})
+
 }(jQuery));
