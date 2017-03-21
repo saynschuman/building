@@ -361,8 +361,20 @@
       $(this).parent().children('ul').fadeOut(300); 
   });
 
-  // lightSlider
+  // sliders
 
+ // popup slider
+
+ $('.popup-slider').slick({
+    asNavFor: '.popup-thumbs-slider'
+ })
+
+ $('.popup-thumbs-slider').slick({
+    asNavFor: '.popup-slider',
+    slidesToShow: 5,
+    focusOnSelect: true
+ })
+ 
  $('#slick-slider-outer').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -475,7 +487,18 @@ $('#lightSlider_2').lightSlider({
 
     $(window).on('load resize', function(){
       var c_b_r = $('.container').offset().left;
-    $('.contacts-block').css('right', c_b_r);
+      $('.contacts-block').css('right', c_b_r);
+      $('.hidden-on-hover').height($(window).height()-250);
+    })
+
+    $('.look').click(function(){
+      $('.hidden-on-hover').show();
+    })
+    $('.look').mouseover(function(){
+      $('.hidden-on-hover').show();
+    })
+    $('.close-hidden').click(function(){
+      $('.hidden-on-hover').hide();
     })
 
 // smoothScroll.init({
@@ -512,7 +535,7 @@ $('header a[href^="#"]').on('click',function(e) {
 
     $(window).scroll(function(){
       var innewWidth = $(this).width();
-      if(innewWidth > 1200) {
+      if(innewWidth > 1050) {
         if ( $(this).scrollTop() > 40) {
           $('.header-fixed').addClass('bfff');
         } else if($(this).scrollTop() <= 40) {
@@ -525,16 +548,18 @@ $('header a[href^="#"]').on('click',function(e) {
 $('.call-me-open').click(function(){
   $('.call-me').show();
   $('.mask-dark').show();
+  $('body').addClass('no-scroll');
 })
 
 $('.ind-pop-open').click(function(e){
   e.preventDefault();
   $('.ind-pop').show();
   $('.mask-dark').show();
+  $('body').addClass('no-scroll');
 })
 
 $('.close').click(function(){
-  $('body').addClass('no-scroll');
+  $('body').removeClass('no-scroll');
   $('.mask-dark').hide();
   $('.popup').hide();
 })
@@ -542,6 +567,7 @@ $('.close').click(function(){
 $('.mask-dark').click(function(){
   $(this).hide();
   $('.popup').hide();
+  $('body').removeClass('no-scroll');
 })
 
 }(jQuery));

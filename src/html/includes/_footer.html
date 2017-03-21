@@ -27,17 +27,6 @@
 	<div class="close"></div>
 </div>
 
-<!-- <div class="popup small">
-	<div class="title">Заявка на <br> индивидуальный <br> проект
-</div>
-	<form id="call-me" action="">
-		<input required type="text" placeholder="Имя">
-		<input required id="form-tel" type="tel" placeholder="Телефон">
-		<button type="submit" data-value="Оставить заявку"></button>
-	</form>
-	<div class="close"></div>
-</div> -->
-
 <div class="popup medium ind-pop">
 	<div class="title">Заявка на индивидуальный проект</div>
 	<form id="call-me-bigger" action="">
@@ -50,116 +39,205 @@
 
 <div class="popup huge clearfix">
 	<div class="left left-align">
-		<div class="demo demo_2">
-			<div id="carousel-popup" class="carousel slide carousel-fade" data-ride="carousel-popup">
-			    <ol class="carousel-indicators">
-			        <li data-target="#carousel-popup" data-slide-to="0" class="active"><img src="img/slider.jpg" /></li>
-			        <li data-target="#carousel-popup" data-slide-to="1"><img src="img/slider.jpg" /></li>
-			        <li data-target="#carousel-popup" data-slide-to="2"><img src="img/slider.jpg" /></li>
-			        <li data-target="#carousel-popup" data-slide-to="3"><img src="img/slider.jpg" /></li>
-			    </ol>
-			    <!-- Carousel items -->
-			    <div class="carousel-inner">
-					<div class="item active">
-				    	<div class="left-c left-align"><div class="img-wr"><img src="img/slider.jpg" /></div></div>
-				    </div>
-				    <div class="item">
-				    	<div class="left-c left-align"><div class="img-wr"><img src="img/slider.jpg" /></div></div>
-				    </div>
-				    <div class="item">
-				    	<div class="left-c left-align"><div class="img-wr"><img src="img/slider.jpg" /></div></div>
-				    </div>
-				    <div class="item">
-				    	<div class="left-c left-align"><div class="img-wr"><img src="img/slider.jpg" /></div></div>
-				    </div>
-			    </div>
-			    <!-- Carousel nav -->
-			    <a class="carousel-control left" href="#carousel-popup" data-slide="prev"></a>
-			    <a class="carousel-control right" href="#carousel-popup" data-slide="next"></a>
-			</div>
+		<div class="popup-slider">
+			<img src="img/slider.jpg" alt="">
+			<img src="img/slider.jpg" alt="">
+			<img src="img/slider.jpg" alt="">
+			<img src="img/slider.jpg" alt="">
+			<img src="img/slider.jpg" alt="">
 		</div>
+		<div class="popup-thumbs-slider">
+			<img src="img/slider.jpg" alt="">
+			<img src="img/slider.jpg" alt="">
+			<img src="img/slider.jpg" alt="">
+			<img src="img/slider.jpg" alt="">
+			<img src="img/slider.jpg" alt="">
+		</div>
+		<form class="h-p" id="" action="">
+		<div class="title">Желаете узнать точную стоимость работ?</div>
+		<p>Оставьте заявку, и наш специалист предоставит <br> вам расчет в течение 24 часов</p>		
+			<input required type="text" placeholder="Имя">
+			<input required id="form-tel" type="tel" placeholder="Телефон">
+			<button type="submit" data-value="Оставить заявку"></button>
+		</form>		
 	</div>
 	<div class="right right-align">
 		<div class="title">Проект “Тулон”</div>
 		<p><b>Площадь дома:</b>  104 м²</p>
-		<p class="look">Посмотреть базовую комплектацию</p>
+		<p class="look">Посмотреть базовую комплектацию <i class="fa fa-info-circle" aria-hidden="true"></i></p>
 		<div class="titl">Выберите свою комплектацию</div>
-			<form class="left left-align clearfix">
-				<div class="f-l">
-					<div class="inp-block">
-						<label for="ch-foundation">Фундамент</label>
-						<input id="ch-foundation" type="text" placeholder="Нет" readonly="true">
-	          			<i class="fa fa-caret-down" aria-hidden="true"></i>
-	          			<ul>
-	          				<li class="txt">Ленточный</li>
-	          				<li class="txt">Монолитный</li>
-	          				<li class="txt">Свайный</li>	          			
-	          			</ul>						
-					</div>
-					<div class="inp-block">
-						<label for="ch-brick">Наружная отделка</label>
-						<input id="ch-brick" type="text" placeholder="Имитация бруса" readonly="true">
-						<i class="fa fa-caret-down" aria-hidden="true"></i>
-	          			<ul>
-	          				<li class="txt">Ленточный</li>
-	          				<li class="txt">Монолитный</li>
-	          				<li class="txt">Свайный</li>	          			
-	          			</ul>												
-					</div>
-					<div class="inp-block">
-						<label for="ch-roof">Кровля</label>
-						<input id="ch-roof" type="text" placeholder="Ондулин" readonly="true">
-						<i class="fa fa-caret-down" aria-hidden="true"></i>
-	          			<ul>
-	          				<li class="txt">Ленточный</li>
-	          				<li class="txt">Монолитный</li>
-	          				<li class="txt">Свайный</li>	          			
-	          			</ul>												
-					</div>
-				</div>
-				<div class="f-r">
-					<div class="inp-block">
-						<label for="ch-season">Сезонность</label>
-						<input id="ch-season" type="text" placeholder="Летний" readonly="true">
-						<i class="fa fa-caret-down" aria-hidden="true"></i>
-	          			<ul>
-	          				<li class="txt">Ленточный</li>
-	          				<li class="txt">Монолитный</li>
-	          				<li class="txt">Свайный</li>	          			
-	          			</ul>												
-					</div>
-					<div class="inp-block">
-						<label for="ch-brush">Внутренняя отделка</label>
-						<input id="ch-brush" type="text" placeholder="Вагонка/гипсокартон" readonly="true">
-						<i class="fa fa-caret-down" aria-hidden="true"></i>
-	          			<ul>
-	          				<li class="txt">Ленточный</li>
-	          				<li class="txt">Монолитный</li>
-	          				<li class="txt">Свайный</li>	          			
-	          			</ul>												
-					</div>
-					<div class="inp-block">
-						<label for="ch-windows">Окна</label>
-						<input id="ch-windows" type="text" placeholder="Металлопластиковые" readonly="true">
-						<i class="fa fa-caret-down" aria-hidden="true"></i>
-	          			<ul>
-	          				<li class="txt">Ленточный</li>
-	          				<li class="txt">Монолитный</li>
-	          				<li class="txt">Свайный</li>	          			
-	          			</ul>												
-					</div>
-				</div>
-				<div class="cost">
-					<div class="reh">Приблизительная стоимость:</div>
-					<div class="value">1448000 <span>рублей</span></div>
-				</div>				
-			</form>		
+		<div class="calculate-cost">
+			<div class="inp-block">
+				<label for="ch-season">Сезонность</label>
+				<input id="ch-season" type="text" placeholder="Летний" readonly="true">
+				<i class="fa fa-caret-down" aria-hidden="true"></i>
+      			<ul>
+      				<li class="txt">Ленточный</li>
+      				<li class="txt">Монолитный</li>
+      				<li class="txt">Свайный</li>	          			
+      			</ul>												
+			</div>
+			<div class="inp-block">
+				<label for="ch-season">Сезонность</label>
+				<input id="ch-season" type="text" placeholder="Летний" readonly="true">
+				<i class="fa fa-caret-down" aria-hidden="true"></i>
+      			<ul>
+      				<li class="txt">Ленточный</li>
+      				<li class="txt">Монолитный</li>
+      				<li class="txt">Свайный</li>	          			
+      			</ul>												
+			</div>
+			<div class="inp-block">
+				<label for="ch-season">Сезонность</label>
+				<input id="ch-season" type="text" placeholder="Летний" readonly="true">
+				<i class="fa fa-caret-down" aria-hidden="true"></i>
+      			<ul>
+      				<li class="txt">Ленточный</li>
+      				<li class="txt">Монолитный</li>
+      				<li class="txt">Свайный</li>	          			
+      			</ul>												
+			</div>
+			<div class="inp-block">
+				<label for="ch-season">Сезонность</label>
+				<input id="ch-season" type="text" placeholder="Летний" readonly="true">
+				<i class="fa fa-caret-down" aria-hidden="true"></i>
+      			<ul>
+      				<li class="txt">Ленточный</li>
+      				<li class="txt">Монолитный</li>
+      				<li class="txt">Свайный</li>	          			
+      			</ul>												
+			</div>
+			<div class="inp-block">
+				<label for="ch-season">Сезонность</label>
+				<input id="ch-season" type="text" placeholder="Летний" readonly="true">
+				<i class="fa fa-caret-down" aria-hidden="true"></i>
+      			<ul>
+      				<li class="txt">Ленточный</li>
+      				<li class="txt">Монолитный</li>
+      				<li class="txt">Свайный</li>	          			
+      			</ul>												
+			</div>
+			<div class="inp-block">
+				<label for="ch-season">Сезонность</label>
+				<input id="ch-season" type="text" placeholder="Летний" readonly="true">
+				<i class="fa fa-caret-down" aria-hidden="true"></i>
+      			<ul>
+      				<li class="txt">Ленточный</li>
+      				<li class="txt">Монолитный</li>
+      				<li class="txt">Свайный</li>	          			
+      			</ul>												
+			</div>		
+		</div>
+		<p class="prev-cost">Приблизительная стоимость:</p>
+		<p class="price"><span>1 448 000</span> рублей</p>	
 	</div>
-	<form class="h-p" id="" action="">
-		<input required type="text" placeholder="Имя">
-		<input required id="form-tel" type="tel" placeholder="Телефон">
-		<button type="submit" data-value="Оставить заявку"></button>
-	</form>
+	<div class="hidden-on-hover clearfix">
+		<div class="close-hidden"></div>
+		<div class="title">Описание базовой комплектации</div>
+		<div class="col-md-6 side">
+			<div class="block">
+				<div class="lable">Фундамент:</div>
+				<ol type="1">
+					<li>Опорно- столбчатый. Столбы устанавливаются с промежутком 2,5 м. Под каждую точку опоры убирается грунт, прокладывается геотекстиль, засыпается песок (трамбовка), щебень (трамбовка), монтаж блоков на подготовленную подушку 200*200*400 мм в количестве 4 штук на каждую точку.</li>
+					<li>Двойная антисептированная обвязка дома:
+						<ul>
+							<li>Первая обвязка - не строганный брус 150х150мм</li>
+							<li>Вторая обвязка - не строганный брус 100х150мм</li>
+						</ul>
+					</li>
+				</ol>
+			</div>
+
+			<div class="block">
+				<div class="lable">Полы:</div>
+				<ol type="1">
+					<li>Черновой пол - доска 22-25х100-150 мм. </li>
+					<li>Ветровлагоизоляция </li>
+					<li>Лаги пола естественной влажности 50х150мм </li>
+					<li>Утеплитель Технониколь, толщина 100 мм </li>
+					<li>Шпунтованная доска на пол, толщ. 36х140 мм</li>
+				</ol>
+			</div>
+
+			<div class="block">
+				<div class="lable">Стены:</div>
+				<ol type="1">
+					<li>Стены и перегородки первого этажа брус 100х100мм и доска 40х100 мм вертикально с промежутками не более 1 м. Верхняя обвязка брус 100х100 мм. Высота первого этажа 2,3 м. Сборка каркаса на металлические гвозди (комбинирование металлическими уголками на саморезы) </li>
+					<li>Утеплитель Технониколь, толщина 100 мм  </li>
+					<li>Парогидроизоляция Изоспан А, В	</li>
+				</ol>
+			</div>
+
+			<div class="block">
+				<div class="lable">Межэтажные перекрытия:</div>
+				<ol type="1">
+					<li>Лаги естественной влажности 50х150 мм </li>
+					<li>Вагонка класс Б 12,5 мм на потолок 1 этажа </li>
+					<li>Шпунтованная доска на пол 2 этажа 36х140 мм</li>
+				</ol>
+			</div>
+			<div class="block">
+				<div class="lable">Мансарда:</div>
+				<ol type="1">
+					<liСтены и перегородки первого этажа брус 50х100мм и доска 40х100 мм вертикально с промежутками не более 1 м. Высота в чистоте 2,2 м </li>
+					<li>Утеплитель Технониколь, толщина 100 мм </li>
+					<li>Парогидроизоляция Изоспан А, В</li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="col-md-6 side">
+			<div class="block">
+				<div class="lable">Крыша:</div>
+				<ol type="1">
+					<li>Стропила 50х100-150 мм (в зависимости от конструкции крыши) </li>
+					<li>Утеплитель Технониколь, толщина 50 мм </li>
+					<li>Ветровлагоизоляция </li>
+					<li>Обрешетка из доски 22-25х100-150 мм </li>
+					<li>Ондулин (цвет на выбор) </li>
+					<li>Конек</li>
+				</ol>
+			</div>				
+			<div class="block">
+				<div class="lable">Окна:</div>
+				<ol type="1">
+					<li>Деревянные стеклопакеты 1000х1200мм</li>
+				</ol>
+			</div>				
+			<div class="block">
+				<div class="lable">	Двери: </div>
+				<ol type="1">
+					<li>Двери межкомнатные - филенчатые (860х2070мм) </li>
+					<li>Входная дверь - металлическая (960х2070 мм) (Россия)</li>
+				</ol>
+			</div>				
+			<div class="block">
+				<div class="lable">Лестница:</div>
+				<ol type="1">
+					<li>Одномаршевая, либо двухмаршевая с балясинами</li>
+				</ol>
+			</div>				
+			<div class="block">
+				<div class="lable">Отделка: </div>
+				<ol type="1">
+					<li>Внутренняя отделка:
+						<ul>
+							<li>Стены, потолок, мансарда - вагонка </li>
+							<li>класс Б 12,5 мм </li>
+							<li>Устройство плинтусов </li>
+						</ul>
+					</li> 
+					<li>Наружная отделка:
+						<ul>
+							<li>Стены - блок-хаус камерной сушки </li>
+							<li>(имитация бруса/бревна) </li>
+							<li>Фронтоны, подшивы - вагонка камерной сушки класс Б 12,5 мм</li>
+						</ul>
+					 </li>
+				</ol>
+			</div>				
+		</div>
+	</div>
 	<div class="close"></div>
 </div>
 
@@ -167,6 +245,17 @@
 	<div class="title">Заявка на индивидуальный проект</div>
 	<p>Мы перезвоним вам в течении 15 минут!</p>
 	<form id="call-me-bigger-2" action="">
+		<input required type="text" placeholder="Имя">
+		<input required id="form-tel" type="tel" placeholder="Телефон">
+		<button type="submit" data-value="Оставить заявку"></button>
+	</form>
+	<div class="close"></div>
+</div> -->
+
+<!-- <div class="popup small">
+	<div class="title">Заявка на <br> индивидуальный <br> проект
+</div>
+	<form id="call-me" action="">
 		<input required type="text" placeholder="Имя">
 		<input required id="form-tel" type="tel" placeholder="Телефон">
 		<button type="submit" data-value="Оставить заявку"></button>

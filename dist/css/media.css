@@ -4,9 +4,28 @@
   .top-nav li::after {
     display: none; }
   .header-fixed .container {
-    padding: 0; } }
+    padding: 0; }
+  .popup.huge {
+    overflow-y: scroll; }
+  .popup .close {
+    right: 16px;
+    top: 16px; } }
+
+@media screen and (max-width: 1096px) {
+  .popup.huge .left {
+    width: 100%;
+    float: none; }
+  .popup.huge .right {
+    width: 100%;
+    float: none;
+    margin-top: 20px; }
+  .popup.huge {
+    padding: 25px; } }
 
 @media screen and (max-width: 1050px) {
+  .popup.huge .hidden-on-hover {
+    left: 0;
+    right: 0; }
   form.tabs ul.sizes li {
     display: block;
     float: none;
@@ -275,6 +294,10 @@
     left: 0;
     right: 0;
     width: 85% !important; }
+  .popup.huge {
+    padding: 25px;
+    top: 0;
+    width: 100% !important; }
   .tit {
     font-size: 25px !important; }
   footer.footer .bottom-foot:nth-child(2) img {
