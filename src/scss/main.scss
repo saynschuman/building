@@ -1145,11 +1145,14 @@ form.tabs {
 				font-size: 16px;
 			}
 			.value {
-				color: #2DB54F;
-				font-size: 36px;
 				font-family: Roboto-Bold;
+				.val-num {
+					color: #2DB54F;
+					font-size: 36px;
+				}
 				span {
 					font-size: 24px;
+					color: #2DB54F;
 				}
 			}
 		}
@@ -3155,4 +3158,12 @@ footer.footer {
 
 .no-scroll {
 	overflow: hidden;
+}
+
+.hidden-on-hover::-webkit-scrollbar { 
+  width: 0; 
+}
+
+.hidden-on-hover { 
+  -ms-overflow-style: none; 
 }

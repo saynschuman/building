@@ -454,70 +454,65 @@
 				<div class="col-md-6 f-l">
 					<div class="inp-block">
 						<label for="ch-foundation">Фундамент</label>
-						<input id="ch-foundation" type="text" placeholder="Нет" readonly="true">
+						<input id="ch-foundation" data-param="0" type="text" placeholder="Нет" readonly="true">
 	          			<i class="fa fa-caret-down" aria-hidden="true"></i>
 	          			<ul>
-	          				<li class="txt">Ленточный</li>
-	          				<li class="txt">Монолитный</li>
-	          				<li class="txt">Свайный</li>	          			
+	          				<li class="txt calculate-1" data-param="53200">Свайный</li>	
+	          				<li class="txt calculate-1" data-param="123000">Ленточный</li>
 	          			</ul>						
 					</div>
 					<div class="inp-block">
 						<label for="ch-brick">Наружная отделка</label>
-						<input id="ch-brick" type="text" placeholder="Имитация бруса" readonly="true">
+						<input id="ch-brick" data-param="0" type="text" placeholder="Имитация бруса" readonly="true">
 						<i class="fa fa-caret-down" aria-hidden="true"></i>
 	          			<ul>
-	          				<li class="txt">Ленточный</li>
-	          				<li class="txt">Монолитный</li>
-	          				<li class="txt">Свайный</li>	          			
+	          				<li class="txt calculate-1" data-param="0">Имитация бруса</li>
+	          				<li class="txt calculate-1" data-param="58500">Сайдинг</li>
 	          			</ul>												
 					</div>
 					<div class="inp-block">
 						<label for="ch-roof">Кровля</label>
-						<input id="ch-roof" type="text" placeholder="Ондулин" readonly="true">
+						<input id="ch-roof" data-param="0" type="text" placeholder="Ондулин" readonly="true">
 						<i class="fa fa-caret-down" aria-hidden="true"></i>
 	          			<ul>
-	          				<li class="txt">Ленточный</li>
-	          				<li class="txt">Монолитный</li>
-	          				<li class="txt">Свайный</li>	          			
+	          				<li class="txt calculate-1" data-param="0">Ондулин</li>	          			
+	          				<li class="txt calculate-1" data-param="49000">Металлочерепица</li>
+	          				<li class="txt calculate-1" data-param="80000">Гибкая черепица</li>
 	          			</ul>												
 					</div>
 				</div>
 				<div class="col-md-6 f-r">
 					<div class="inp-block">
 						<label for="ch-season">Сезонность</label>
-						<input id="ch-season" type="text" placeholder="Летний" readonly="true">
+						<input id="ch-season" data-param="0" type="text" placeholder="Летний" readonly="true">
 						<i class="fa fa-caret-down" aria-hidden="true"></i>
 	          			<ul>
-	          				<li class="txt">Ленточный</li>
-	          				<li class="txt">Монолитный</li>
-	          				<li class="txt">Свайный</li>	          			
+	          				<li class="txt calculate-1" data-param="0">Летний</li>
+	          				<li class="txt calculate-1" data-param="26000">Зимний</li>
 	          			</ul>												
 					</div>
 					<div class="inp-block">
 						<label for="ch-brush">Внутренняя отделка</label>
-						<input id="ch-brush" type="text" placeholder="Вагонка/гипсокартон" readonly="true">
+						<input id="ch-brush" data-param="0" type="text" placeholder="Вагонка/гипсокартон" readonly="true">
 						<i class="fa fa-caret-down" aria-hidden="true"></i>
 	          			<ul>
-	          				<li class="txt">Ленточный</li>
-	          				<li class="txt">Монолитный</li>
-	          				<li class="txt">Свайный</li>	          			
+	          				<li class="txt calculate-1" data-param="0">Вагонка/гипсокартон</li>
+	          				<li class="txt calculate-1" data-param="38000">Имитация бруса</li>	          			
 	          			</ul>												
 					</div>
 					<div class="inp-block">
 						<label for="ch-windows">Окна</label>
-						<input id="ch-windows" type="text" placeholder="Металлопластиковые" readonly="true">
+						<input id="ch-windows" data-param="0" type="text" placeholder="Металлопластиковые" readonly="true">
 						<i class="fa fa-caret-down" aria-hidden="true"></i>
 	          			<ul>
-	          				<li class="txt">Ленточный</li>
-	          				<li class="txt">Монолитный</li>
-	          				<li class="txt">Свайный</li>	          			
+	          				<li class="txt calculate-1" data-param="0">Металлопластиковые</li>
+	          				<li class="txt calculate-1" data-param="8000">Энергосберегающий</li>         			
 	          			</ul>												
 					</div>
 				</div>
 				<div class="cost">
 					<div class="title">Приблизительная стоимость:</div>
-					<div class="value">1 448 000 <span>рублей</span></div>
+					<div class="value"><span class="val-num">0 </span><span>рублей</span></div>
 				</div>				
 			</form>
 			<div class="right right-align">
@@ -1085,68 +1080,63 @@
 		<div class="titl">Выберите свою комплектацию</div>
 		<div class="calculate-cost">
 			<div class="inp-block">
-				<label for="ch-season">Сезонность</label>
-				<input id="ch-season" type="text" placeholder="Летний" readonly="true">
+				<label for="pop-foundation">Фундамент</label>
+				<input data-param="0" id="pop-foundation" type="text" placeholder="Нет" readonly="true">
 				<i class="fa fa-caret-down" aria-hidden="true"></i>
       			<ul>
-      				<li class="txt">Ленточный</li>
-      				<li class="txt">Монолитный</li>
-      				<li class="txt">Свайный</li>	          			
+      				<li class="txt calculate-2" data-param="53200">Свайный</li>	
+	          		<li class="txt calculate-2" data-param="123000">Ленточный</li>          			
       			</ul>												
 			</div>
 			<div class="inp-block">
-				<label for="ch-season">Сезонность</label>
-				<input id="ch-season" type="text" placeholder="Летний" readonly="true">
+				<label for="pop-brick">Наружная отделка</label>
+				<input data-param="0" id="pop-brick" type="text" placeholder="Нет" readonly="true">
 				<i class="fa fa-caret-down" aria-hidden="true"></i>
       			<ul>
-      				<li class="txt">Ленточный</li>
-      				<li class="txt">Монолитный</li>
-      				<li class="txt">Свайный</li>	          			
+      				<li class="txt calculate-2" data-param="0">Имитация бруса</li>
+      				<li class="txt calculate-2" data-param="58500">Сайдинг</li>          			
       			</ul>												
 			</div>
 			<div class="inp-block">
-				<label for="ch-season">Сезонность</label>
-				<input id="ch-season" type="text" placeholder="Летний" readonly="true">
+				<label for="pop-roof">Кровля</label>
+				<input data-param="0" id="pop-roof" type="text" placeholder="Нет" readonly="true">
 				<i class="fa fa-caret-down" aria-hidden="true"></i>
       			<ul>
-      				<li class="txt">Ленточный</li>
-      				<li class="txt">Монолитный</li>
-      				<li class="txt">Свайный</li>	          			
+      				<li class="txt calculate-2" data-param="0">Ондулин</li>	          			
+      				<li class="txt calculate-2" data-param="49000">Металлочерепица</li>
+      				<li class="txt calculate-2" data-param="80000">Гибкая черепица</li>          			
       			</ul>												
 			</div>
 			<div class="inp-block">
-				<label for="ch-season">Сезонность</label>
-				<input id="ch-season" type="text" placeholder="Летний" readonly="true">
+				<label for="pop-season">Сезонность</label>
+				<input data-param="0" id="pop-season" type="text" placeholder="Нет" readonly="true">
 				<i class="fa fa-caret-down" aria-hidden="true"></i>
       			<ul>
-      				<li class="txt">Ленточный</li>
-      				<li class="txt">Монолитный</li>
-      				<li class="txt">Свайный</li>	          			
+      				<li class="txt calculate-2" data-param="0">Летний</li>
+      				<li class="txt calculate-2" data-param="26000">Зимний</li>          			
       			</ul>												
 			</div>
 			<div class="inp-block">
-				<label for="ch-season">Сезонность</label>
-				<input id="ch-season" type="text" placeholder="Летний" readonly="true">
+				<label for="pop-brush">Внутренняя отделка</label>
+				<input data-param="0" id="pop-brush" type="text" placeholder="Нет" readonly="true">
 				<i class="fa fa-caret-down" aria-hidden="true"></i>
       			<ul>
-      				<li class="txt">Ленточный</li>
-      				<li class="txt">Монолитный</li>
-      				<li class="txt">Свайный</li>	          			
+      				<li class="txt calculate-2" data-param="0">Вагонка/гипсокартон</li>
+      				<li class="txt calculate-2" data-param="38000">Имитация бруса</li>	          			
       			</ul>												
 			</div>
 			<div class="inp-block">
-				<label for="ch-season">Сезонность</label>
-				<input id="ch-season" type="text" placeholder="Летний" readonly="true">
+				<label for="pop-windows">Окна</label>
+				<input data-param="0" id="pop-windows" type="text" placeholder="Нет" readonly="true">
 				<i class="fa fa-caret-down" aria-hidden="true"></i>
       			<ul>
-      				<li class="txt">Ленточный</li>
-      				<li class="txt">Монолитный</li>
-      				<li class="txt">Свайный</li>	          			
+      				<li class="txt calculate-2" data-param="0">Металлопластиковые</li>
+      				<li class="txt calculate-2" data-param="8000">Энергосберегающий</li> 	          			
       			</ul>												
 			</div>		
 		</div>
 		<p class="prev-cost">Приблизительная стоимость:</p>
-		<p class="price"><span>1 448 000</span> рублей</p>	
+		<p class="price"><span>0 </span> рублей</p>	
 	</div>
 	<div class="hidden-on-hover clearfix">
 		<div class="close-hidden"></div>

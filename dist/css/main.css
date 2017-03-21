@@ -1196,11 +1196,13 @@ form.tabs #send-form {
       .count-body-wrapper .left .cost .title {
         font-size: 16px; }
       .count-body-wrapper .left .cost .value {
-        color: #2DB54F;
-        font-size: 36px;
         font-family: Roboto-Bold; }
+        .count-body-wrapper .left .cost .value .val-num {
+          color: #2DB54F;
+          font-size: 36px; }
         .count-body-wrapper .left .cost .value span {
-          font-size: 24px; }
+          font-size: 24px;
+          color: #2DB54F; }
     .count-body-wrapper .left .inp-block label {
       display: block;
       font-family: Roboto-Medium;
@@ -2962,3 +2964,9 @@ footer.footer {
 
 .no-scroll {
   overflow: hidden; }
+
+.hidden-on-hover::-webkit-scrollbar {
+  width: 0; }
+
+.hidden-on-hover {
+  -ms-overflow-style: none; }

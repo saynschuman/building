@@ -565,8 +565,6 @@ $('.details').click(function(e){
   $('#' + id).show();
   $('.mask-dark').show();
   $('body').addClass('no-scroll');  
-})
-
 // popup slider
    $('.popup-slider').slick({
       asNavFor: '.popup-thumbs-slider',
@@ -577,6 +575,56 @@ $('.details').click(function(e){
       asNavFor: '.popup-slider',
       slidesToShow: 5,
       focusOnSelect: true
-   })  
+   })    
+})
+
+// calculate
+
+$('.calculate-1').click(function(e){
+          
+          var target = $(e.target).attr('data-param');
+          var elems = $(".count-body-wrapper input[type='text']"),
+          elemsTotal = elems.length;
+
+      if (target != null) {
+
+        $(this).parent().parent().find('input').attr('data-param', target);
+
+        var foundation = parseFloat( $('#ch-foundation').attr('data-param'));//вычисляем коээф для foundation
+        var brick = parseFloat( $('#ch-brick').attr('data-param'));//вычисляем коээф для brick
+        var roof = parseFloat( $('#ch-roof').attr('data-param'));//вычисляем коээф для roof
+        var season = parseFloat( $('#ch-season').attr('data-param'));//вычисляем коээф для season
+        var brush = parseFloat( $('#ch-brush').attr('data-param'));//вычисляем коээф для brush
+        var windows = parseFloat( $('#ch-windows').attr('data-param'));//вычисляем коээф для windows
+
+        var total = foundation + brick + roof + season + brush + windows;//формула расчета общей стоимости
+
+         $(".count-body-wrapper .val-num").html(total + ' ' );
+      }        
+})
+
+$('.calculate-2').click(function(e){
+          
+          var target = $(e.target).attr('data-param');
+          var elems = $(".huge input[type='text']"),
+          elemsTotal = elems.length;
+
+      if (target != null) {
+
+        $(this).parent().parent().find('input').attr('data-param', target);
+
+        var foundation = parseInt( $('#pop-foundation').attr('data-param'));//вычисляем коээф для foundation
+        var brick = parseInt( $('#pop-brick').attr('data-param'));//вычисляем коээф для brick
+        var roof = parseInt( $('#pop-roof').attr('data-param'));//вычисляем коээф для roof
+        var season = parseInt( $('#pop-season').attr('data-param'));//вычисляем коээф для season
+        var brush = parseInt( $('#pop-brush').attr('data-param'));//вычисляем коээф для brush
+        var windows = parseInt( $('#pop-windows').attr('data-param'));//вычисляем коээф для windows
+
+        var total = foundation + brick + roof + season + brush + windows;//формула расчета общей стоимости
+
+        
+         $(".huge .price span").html(total + ' ' );
+      }        
+})
 
 }(jQuery));
