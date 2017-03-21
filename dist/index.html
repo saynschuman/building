@@ -177,11 +177,9 @@
 								<li>01</li>
 								<li>Проект «Данилов»</li>
 							</ul>
-							<a href="">
 								<div class="thumb">
 									<img src="img/thumb-1.jpg" alt="">
 								</div>
-							</a>
 							<div class="info clearfix">
 								<div class="left-align">
 									<ul>
@@ -190,7 +188,7 @@
 									</ul>
 								</div>
 								<div class="right-align">
-									<a class="details" href="#" data-value="Подробнее"></a>
+									<a class="details" href="#" data-id="project-1" data-value="Подробнее"></a>
 								</div>
 							</div>
 						</div>
@@ -201,11 +199,9 @@
 								<li>02</li>
 								<li>Проект «Андреев»</li>
 							</ul>
-							<a href="">
 								<div class="thumb">
 									<img src="img/thumb-2.jpg" alt="">
 								</div>
-							</a>
 							<div class="info clearfix">
 								<div class="left-align">
 									<ul>
@@ -225,11 +221,9 @@
 								<li>03</li>
 								<li>Проект «Шолохов»</li>
 							</ul>
-							<a href="">
 								<div class="thumb">
 									<img src="img/thumb-3.jpg" alt="">
 								</div>
-							</a>
 							<div class="info clearfix">
 								<div class="left-align">
 									<ul>
@@ -249,11 +243,9 @@
 								<li>04</li>
 								<li>Проект «Горький»</li>
 							</ul>
-							<a href="">
 								<div class="thumb">
 									<img src="img/thumb-4.jpg" alt="">
 								</div>
-							</a>
 							<div class="info clearfix">
 								<div class="left-align">
 									<ul>
@@ -273,11 +265,9 @@
 								<li>05</li>
 								<li>Проект «Державин»</li>
 							</ul>
-							<a href="">
 								<div class="thumb">
 									<img src="img/thumb-5.jpg" alt="">
 								</div>
-							</a>
 							<div class="info clearfix">
 								<div class="left-align">
 									<ul>
@@ -297,11 +287,9 @@
 								<li>06</li>
 								<li>Проект «Карамзин»</li>
 							</ul>
-							<a href="">
 								<div class="thumb">
 									<img src="img/thumb-6.jpg" alt="">
 								</div>
-							</a>
 							<div class="info clearfix">
 								<div class="left-align">
 									<ul>
@@ -323,11 +311,9 @@
 								<li>07</li>
 								<li>Проект «Тургенев»</li>
 							</ul>
-							<a href="">
 								<div class="thumb">
 									<img src="img/thumb-7.jpg" alt="">
 								</div>
-							</a>
 							<div class="info clearfix">
 								<div class="left-align">
 									<ul>
@@ -347,11 +333,9 @@
 								<li>08</li>
 								<li>Проект «Пастернак»</li>
 							</ul>
-							<a href="">
 								<div class="thumb">
 									<img src="img/thumb-8.jpg" alt="">
 								</div>
-							</a>
 							<div class="info clearfix">
 								<div class="left-align">
 									<ul>
@@ -371,11 +355,9 @@
 								<li>09</li>
 								<li>Проект «Пушкин»</li>
 							</ul>
-							<a href="">
 								<div class="thumb">
 									<img src="img/thumb-9.jpg" alt="">
 								</div>
-							</a>
 							<div class="info clearfix">
 								<div class="left-align">
 									<ul>
@@ -395,11 +377,9 @@
 								<li>10</li>
 								<li>Проект «Хлебников»</li>
 							</ul>
-							<a href="">
 								<div class="thumb">
 									<img src="img/thumb-10.jpg" alt="">
 								</div>
-							</a>
 							<div class="info clearfix">
 								<div class="left-align">
 									<ul>
@@ -419,11 +399,9 @@
 								<li>11</li>
 								<li>Проект «Вересаев»</li>
 							</ul>
-							<a href="">
 								<div class="thumb">
 									<img src="img/thumb-11.jpg" alt="">
 								</div>
-							</a>
 							<div class="info clearfix">
 								<div class="left-align">
 									<ul>
@@ -1044,6 +1022,8 @@
 
 <!-- popups -->
 
+<!-- start small popup -->
+
 <div class="popup small call-me">
 	<div class="title">Заказ звонка</div>
 	<p>Мы перезвоним вам в течении 15 минут!</p>
@@ -1055,6 +1035,10 @@
 	<div class="close"></div>
 </div>
 
+<!-- end small popup -->
+
+<!-- start medium popup -->
+
 <div class="popup medium ind-pop">
 	<div class="title">Заявка на индивидуальный проект</div>
 	<form id="call-me-bigger" action="">
@@ -1065,7 +1049,12 @@
 	<div class="close"></div>
 </div>
 
-<div class="popup huge clearfix">
+<!-- end medium popup -->
+
+<!-- HUGE POPUPS -->
+<!-- start huge popup -->
+
+<div id="project-1" class="popup huge clearfix">
 	<div class="left left-align">
 		<div class="popup-slider">
 			<img src="img/slider.jpg" alt="">
@@ -1269,37 +1258,15 @@
 	<div class="close"></div>
 </div>
 
-<!-- <div class="popup medium">
-	<div class="title">Заявка на индивидуальный проект</div>
-	<p>Мы перезвоним вам в течении 15 минут!</p>
-	<form id="call-me-bigger-2" action="">
-		<input required type="text" placeholder="Имя">
-		<input required id="form-tel" type="tel" placeholder="Телефон">
-		<button type="submit" data-value="Оставить заявку"></button>
-	</form>
-	<div class="close"></div>
-</div> -->
-
-<!-- <div class="popup small">
-	<div class="title">Заявка на <br> индивидуальный <br> проект
-</div>
-	<form id="call-me" action="">
-		<input required type="text" placeholder="Имя">
-		<input required id="form-tel" type="tel" placeholder="Телефон">
-		<button type="submit" data-value="Оставить заявку"></button>
-	</form>
-	<div class="close"></div>
-</div> -->
+<!-- end huge popup -->
 
 <script src="libs/js/jquery.min.js"></script>
 <script src="libs/js/input-mask.js"></script>
 <script src="libs/js/lighter.js"></script>
-<!-- <script src="libs/js/form-2.js"></script> -->
 <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
 <script src="libs/js/bootstrap-carousel.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>
-
 </html>
